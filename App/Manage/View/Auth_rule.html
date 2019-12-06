@@ -1,0 +1,82 @@
+<extend name="Public:base" />
+
+<block name="content">
+    <div class="row">
+        <div class="col-lg-12">
+            <h3 class="page-header"><em class="glyphicon glyphicon-cloud-upload"></em> 
+            {$meta_title}         
+            </h3>
+        </div>
+        
+    </div>
+
+    <div class="row margin-botton">
+        <div class="col-sm-6 column">
+            <div class="btn-group btn-group-md">
+                <button class="btn btn-primary" type="button" onclick="goUrl('{:U('addRule')}')"><em class="glyphicon glyphicon-plus-sign"></em> 添加菜单规则</button>
+                <button class="btn btn-default" type="button" onclick="doGoSubmit('{:U('sortRule')}','form_do')"><em class="glyphicon glyphicon-th-list"></em> 更新排序</button>
+                <button class="btn btn-default" type="button" onclick="doGoSubmit('{:U('qkRule')}','form_do')"><em class="glyphicon glyphicon-th-list"></em> 更新快捷面板</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <form action="" method="post" id="form_do" name="form_do">
+                <div class="table-responsive">
+                    <table class="table table-hover xyh-table-bordered-out">
+                        <thead>
+                            <tr class="active">
+                                <th>编号</th>
+                                <th>名称</th>
+                                <th>菜单</th>
+                                <th>图标</th>
+                                <th>规则</th>
+                                <th>显示</th>
+                                <th>排序</th>
+                                <th>快捷</th>
+                                <th class="text-right">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <foreach name='cate' item='v'>
+                        <tr <empty name="v['is_menu']">style="background:#eeeeee; color:#999999;"</empty>>
+                            <td>{$v.id}</td>
+                            <td class="aleft">{$v.delimiter}<if condition="$v['pid'] neq 0">├─</if>{$v.title}</td>
+                            <td>
+                                <notempty name="v['is_menu']"><strong class="text-success">是</strong><else /><strong class="text-muted"><i>否</i></strong></notempty>
+                            </td>
+                            <td>
+                                <notempty name="v['icon']"><i class="{$v.icon}"></i></notempty></td>
+                            <td>{$v.name}</td>
+                            <td>
+                                <notempty name="v['status']"><strong class="text-success">是</strong><else /><strong class="text-muted"><i>否</i></strong></notempty>
+                            </td>        
+                            <td><input type="text" name="sortlist[{$v.id}]" value="{$v.sort}" id="sortlist" size="5" class="xyh-form-control" /></td>
+                            <td><input type="checkbox" name="quicklist[]" value="{$v.id}" <notempty name="v['is_quick']"> checked="checked"</notempty> <if condition="$v['level'] neq 3">disabled="disabled"</if> /></td>
+                            <td class="text-right">
+                                <if condition="in_array($v['id'],array(6,7))">
+                                    <a class="label label-default"><i>添加子级</i></a>
+                                    <a class="label label-default"><i>修改</i></a>
+                                    <a class="label label-default"><i>删除</i></a>
+                                <elseif condition="$v['id'] eq 1" />
+                                    <a href="{:U('addRule',array('pid' => $v['id']))}" class="label label-info">添加子级</a>
+                                    <a class="label label-default"><i>修改</i></a>
+                                    <a class="label label-default"><i>删除</i></a>
+                                <else/>
+                                    <a href="{:U('addRule',array('pid' => $v['id']))}" class="label label-info">添加子级</a>
+                                    <a href="{:U('editRule',array('id' => $v['id']))}" class="label label-success">修改</a>
+                                    <a href="javascript:;" onclick="toConfirm('{:U('delRule', array('id' => $v['id']))}', '确实要删除吗？')" class="label label-danger">删除</a>
+                                </if> 
+                            </td>
+                        </tr>
+                        </foreach>
+                        </tbody>
+                    </table>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+
+    </block>

@@ -1,0 +1,6 @@
+[ 2019-12-04T16:33:52+08:00 ] 127.0.0.1 /lslx/xyhai.php?s=/Category/index
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\PHPTutorial\WWW\lslx\App\Common\Lib\Category.class.php 第 34 行.
+
+[ 2019-12-04T16:33:54+08:00 ] 127.0.0.1 /lslx/xyhai.php?s=/Category/add
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\PHPTutorial\WWW\lslx\App\Common\Lib\Category.class.php 第 34 行.
+

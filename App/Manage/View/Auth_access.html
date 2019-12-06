@@ -1,0 +1,168 @@
+<extend name="Public:base" />
+<block name="header_js">
+
+<script type="text/javascript">
+    $(function(){
+         $('#checkAll').click(function(){
+
+            //attr('checked')不管用1.7+后  
+            //var checked = $(this).prop('checked');//this.checked;//IE9+
+            var checked = $(this).prop('checked');             
+            var inputs = $('#accessContent input[type=checkbox]');
+     
+            if (checked) {
+                inputs.prop('checked', true);
+            }else {
+                inputs.prop('checked', false);
+            }
+            
+        });
+        //选中全部子级
+        $('tr input[type=checkbox]').click(function(){
+
+            var checked = $(this).prop('checked'); 
+            var level = parseInt($(this).attr('level')); 
+            var treeString = $(this).attr('data-tree'); //1-2-3
+            var treeArr = treeString.split('-');
+
+            var topId = $(this).attr('data-tid');
+            var inputs = $('#formAccessTable').find('input[data-tid='+ topId +']'); 
+
+            if (level == 1) {                    
+                inputs.prop('checked', checked);                
+
+            } else {
+
+                inputs.each(function(index, el) {
+                    var _level = parseInt($(el).attr('level'));
+                    var _tree = $(el).attr('data-tree');
+                    var _treePrex = treeString + '-';
+
+                    if ((level == 2 && _tree == treeArr[0]) || (level == 3 && (_tree == treeArr[0] || _tree == (treeArr[0]+'-'+treeArr[1]))) 
+                        || (level == 4 && (_tree == treeArr[0] || _tree == (treeArr[0]+'-'+treeArr[1])  || _tree == (treeArr[0]+'-'+treeArr[1]+'-'+treeArr[2])))
+                        ) {
+                        if (checked) {
+                            $(el).prop('checked', true);
+                        }
+                    } 
+                    
+                    if(_tree.indexOf(_treePrex) == 0) {                 
+                        $(el).prop('checked', checked); //true,false 
+                    }
+                });
+            } 
+           
+            
+        });
+
+
+
+
+    });
+ 
+</script>
+</block>
+
+<block name="content">
+    <div class="row">
+        <div class="col-lg-12">
+            <h3 class="page-header"><em class="glyphicon glyphicon-cloud-upload"></em> 
+            {$meta_title}       
+            </h3> 
+        </div>
+        
+    </div>
+
+    <div class="row margin-botton">
+        <div class="col-lg-12">
+            <div class="btn-group btn-group-md">           
+                <button class="btn btn-primary" type="button" onclick="goUrl('{:U('index')}')"><em class="glyphicon glyphicon-chevron-left"></em> 返回</button>
+                <button class="btn btn-info" type="button" onclick="doGoSubmit('{:U('access')}', 'formAccess')"><em class="glyphicon glyphicon-saved"></em> 更新权限</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="alert alert-success" role="alert">
+              <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+              <span class="sr-only">Note:</span>
+              <span>{$role_name}</span> 的权限设置
+            </div>
+        </div>
+        <div class="col-md-12 column">
+            <p>
+                <label class="checkbox-inline" for="checkAll">                    
+                    <input type="checkbox" id="checkAll"  />
+                    <span class=" label label-default">全部选择</span>
+                </label>
+            </p>
+            
+        </div>
+    </div>
+
+
+    <div class="row" id="accessContent">
+
+        <form method="post" action="{:U('access')}" id="formAccess">
+            <input type="hidden" name="id" value="{$id}">
+            <div class="col-lg-12">
+
+                <table class="table table-hover xyh-table-bordered-out" id="formAccessTable"> 
+                    <tbody>
+                    <volist name="vlist" id="vo">
+                        <tr>
+                            <td class="aleft" data-id="{$vo.id}">
+                                <label class="checkbox-inline">                    
+                                    <input class="uniform" type="checkbox" name="roleslist[]" value="{$vo.id}" level="1" data-tid="{$vo.id}" data-tree="{$vo.id}" <notempty name="vo['_check']">checked="checked"</notempty>  />
+                                    <span>{$vo.title}</span>
+                                </label>
+                            </td>                      
+                        </tr> 
+                        <volist name="vo['_child']" id="vo2">
+                            <tr>
+                                <td class="aleft" data-id="{$vo2.id}">├─
+                                    <label class="checkbox-inline">                    
+                                        <input class="uniform" type="checkbox" name="roleslist[]" value="{$vo2.id}" level="2" data-tid="{$vo.id}" data-tree="{$vo.id}-{$vo2.id}" <notempty name="vo2['_check']">checked="checked"</notempty>  />
+                                        <span>{$vo2.title}</span>
+                                    </label>
+                                </td>                      
+                            </tr> 
+                            <notempty name="vo2['_child']">
+                            <foreach name="vo2['_child']" item="vo3">
+                                <tr>
+                                    <td class="aleft" data-id="{$vo3.id}">&nbsp;&nbsp;&nbsp;├─
+                                        <label class="checkbox-inline">                    
+                                            <input class="uniform" type="checkbox" name="roleslist[]" value="{$vo3.id}" level="3" data-tid="{$vo.id}" data-tree="{$vo.id}-{$vo2.id}-{$vo3.id}" <notempty name="vo3['_check']">checked="checked"</notempty>  />
+                                            <span>{$vo3.title}</span>
+                                        </label>
+                                    </td>                      
+                                </tr>
+                                <notempty name="vo3['_child']">
+                                    <tr>
+                                        <td class="aleft">
+                                            <div style="padding: 5px 20px;">
+                                            <foreach name="vo3['_child']" item="vo4">
+                                            &nbsp;&nbsp;&nbsp;
+                                            <label class="checkbox-inline">                    
+                                                <input class="uniform" type="checkbox" name="roleslist[]" value="{$vo4.id}" level="4" data-tid="{$vo.id}" data-tree="{$vo.id}-{$vo2.id}-{$vo3.id}-{$vo4.id}" <notempty name="vo4['_check']">checked="checked"</notempty>  />
+                                                <span>{$vo4.title}</span>
+                                            </label>
+                                            </foreach>
+                                        </div>
+                                        </td>                      
+                                    </tr> 
+                                </notempty>
+                            </foreach>  
+                            </notempty>                          
+                        </volist>
+                    </volist>
+                    </tbody>
+                </table>
+
+            </div>
+        
+       </form>
+
+    </div>
+
+</block>

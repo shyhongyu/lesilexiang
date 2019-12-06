@@ -1,0 +1,99 @@
+<extend name="Public:base" />
+<block name="header_js">
+<script type="text/javascript" src="__PUBLIC__/js/calendar.config.js"></script>
+</block>
+
+<block name="content">
+	<div class="row">
+		<div class="col-lg-12">
+			<h3 class="page-header"><em class="glyphicon glyphicon-cloud-upload"></em> 
+			添加IP黑名单  
+		    </h3>
+		</div>
+		
+	</div>
+
+
+	<div class="row">
+		<div class="col-lg-12">
+
+				<form method='post' class="form-horizontal" id="form_do" name="form_do" action="{:U('add')}">											
+
+					<div class="form-group">
+						<label for="inputIp" class="col-sm-2 control-label">IP地址</label>
+						<div class="col-sm-9">
+							<input type="text" name="ip" id="inputIp" class="form-control" placeholder="请输入IP地址，如202.165.26.5" required="required" />									
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-2 control-label">是否永久</label>
+						<div class="col-sm-9">
+							<label class="radio-inline">
+							 	<input type="radio" name="forever_flag" value="0" checked="checked" />临时				
+							 </label>
+							<label class="radio-inline">
+							 	<input type="radio" name="forever_flag" value="1" />永久		
+							 </label>	
+						</div>
+					</div>	
+
+					<div class="form-group">
+						<label for="end_time" class="col-sm-2 control-label">结束日期</label>
+						<div class="col-sm-4">
+							<input type="text" name="expire_time" id="expire_time" value="{:date('Y-m-d H:i:s',strtotime('+1 month'))}" class="form-control" />
+			                <script type="text/javascript">
+			                    Calendar.setup({
+			                        weekNumbers: true,
+			                        inputField : "expire_time",
+			                        trigger    : "expire_time",
+			                        dateFormat: "%Y-%m-%d %H:%M:%S",
+			                        showTime: true,
+			                        minuteStep: 1,
+			                        onSelect   : function() {this.hide();}
+			                    });
+
+			                </script>								
+						</div>
+						<div class="col-sm-5">只针对临时有效</div>
+					</div>
+
+					<div class="form-group">
+						<label for="inputContent" class="col-sm-2 control-label">备注</label>
+						<div class="col-sm-9">
+							<textarea name="note" class="form-control" rows="5"></textarea>						
+						</div>
+					</div>			
+
+					<div class="form-group">
+						<label class="col-sm-2 control-label">状态</label>
+						<div class="col-sm-9">
+							<label class="radio-inline">
+							 	<input type="radio" name="status" value="1" checked="checked" />有效		
+							 </label>	
+							<label class="radio-inline">
+							 	<input type="radio" name="status" value="0" />无效				
+							 </label>
+						</div>
+					</div>
+					
+					<div class="row margin-botton-large">
+						<div class="col-sm-offset-2 col-sm-9">
+							<div class="btn-group">
+								<button type="submit" class="btn btn-primary"> <i class="glyphicon glyphicon-saved"></i>
+									保存
+								</button>
+								<button type="button" onclick="goUrl('{:U('index')}')" class="btn btn-default"> <i class="glyphicon glyphicon-chevron-left"></i>
+									返回
+								</button>
+							</div>
+						</div>
+					</div>
+				</form>
+	
+		</div>
+	</div>
+
+		
+
+
+</block>
