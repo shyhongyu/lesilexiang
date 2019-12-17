@@ -1,0 +1,108 @@
+[ 2019-12-17T14:25:23+08:00 ] 192.168.2.107 /xyhai.php?s=/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `xyh_auth_rule` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `xyh_auth_rule` WHERE `status` = 1 AND `is_menu` = 1 ORDER BY sort,id  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xyh_auth_rule` WHERE `status` = 1 AND `is_menu` = 1 AND `is_quick` = 1 ORDER BY sort,id  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023025s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000342s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000361s ]
+
+[ 2019-12-17T14:25:23+08:00 ] 192.168.2.107 /xyhai.php?s=/Public/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+SQL: SELECT VERSION() as ver; [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006291s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006328s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000205s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.003575s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002201s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001519s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000007s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.003556s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000474s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000504s ]
+
+[ 2019-12-17T14:25:23+08:00 ] 192.168.2.107 /xyhai.php?s=/Index/getParentCate&pid=0&rnd=99754
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+SQL: SHOW COLUMNS FROM `xyh_category` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `xyh_model` [ RunTime:0.0035s ]
+SQL: SELECT COUNT(*) AS tp_count FROM xyh_category category LEFT JOIN xyh_model model ON category.model_id = model.id WHERE category.pid = 0 AND category.type = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.cat_pic AS cat_pic,category.pid AS pid,category.model_id AS model_id,category.type AS type,category.seo_title AS seo_title,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.style AS style,category.status AS status,category.sort AS sort,model.name AS model_name,model.table_name AS table_name FROM xyh_category category LEFT JOIN xyh_model model ON category.model_id = model.id WHERE category.pid = 0 AND category.type = 0 ORDER BY category.sort ASC,category.id ASC  [ RunTime:0.0006s ]
+
+[ 2019-12-17T14:25:23+08:00 ] 192.168.2.107 /xyhai.php?s=/Public/checkState
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000041s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+SQL: SHOW COLUMNS FROM `xyh_admin` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `xyh_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2019-12-17T14:27:04+08:00 ] 192.168.2.107 /xyhai.php?s=/Category/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `xyh_category` [ RunTime:0.0501s ]
+SQL: SHOW COLUMNS FROM `xyh_model` [ RunTime:0.0682s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.cat_pic AS cat_pic,category.pid AS pid,category.model_id AS model_id,category.type AS type,category.seo_title AS seo_title,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.style AS style,category.status AS status,category.sort AS sort,model.name AS model_name,model.table_name AS table_name FROM xyh_category category LEFT JOIN xyh_model model ON category.model_id = model.id ORDER BY category.sort ASC,category.id ASC  [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034937s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035036s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001649s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001746s ]
+
+[ 2019-12-17T14:28:23+08:00 ] 192.168.2.107 /xyhai.php?s=/Public/checkState
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+SQL: SHOW COLUMNS FROM `xyh_admin` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `xyh_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+
