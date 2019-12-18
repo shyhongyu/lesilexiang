@@ -29,10 +29,10 @@
                             <tr class="active">
                                 <th><input type="checkbox" id="check"></th>
                                 <th>编号</th>
-                                <th>姓名</th>
+                                <!-- <th>姓名</th> -->
                                 <th>电话</th>
-                                <th>微信</th>
-                                <th>留言</th>
+                                <th>时间</th>
+                                <!-- <th>留言</th> -->
                                 <!-- <th>审核</th> -->
                                 <th class="text-right">操作</th>
                             </tr>
@@ -42,7 +42,7 @@
                         <tr>
                             <td><input type="checkbox" name="key[]" value="{$v.id}"></td>
                             <td>{$v.id}</td>
-                            <td>{$v.username}
+                            <!-- <td>{$v.username} -->
                                 <!-- <p>
                                 <strong>姓名：</strong><if condition="$v['user_id']"><a href="{$v.user_id}" target="_blank">{$v.username}</a><else/>{$v.username}</if>
                                 <strong>来自：</strong>{$v.ip} <strong>电话：</strong>{$v.tel} <strong>QQ：</strong>{$v.qq}<br/>
@@ -57,8 +57,8 @@
                                 </notempty> -->
                              </td>  
                              <td>{$v.tel}</td> 
-                             <td>{$v.weixin}</td> 
-                             <td>{$v.content}</td>           
+                             <td>{$v.post_time}</td> 
+                             <!-- <td>{$v.content}</td>            -->
                             <!-- <td class="">
                                 <notempty name="v['status']"><strong class="text-success">已审核</strong><else /><strong class="text-muted"><i>未审核</i></strong></notempty>
                                 <notempty name="v['private_flag']"><strong class="text-info"><i>悄悄话</i></strong></notempty>

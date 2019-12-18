@@ -7,37 +7,37 @@
 	<title>后台</title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
-	<link rel="stylesheet" type="text/css" href="/lslx/Data/static/bootstrap/3.3.5/css/bootstrap.min.css" media="screen">	
-	<link rel='stylesheet' type="text/css" href="/lslx/App/Manage/View/Public/css/main.css?20191001" />
+	<link rel="stylesheet" type="text/css" href="/Data/static/bootstrap/3.3.5/css/bootstrap.min.css" media="screen">	
+	<link rel='stylesheet' type="text/css" href="/App/Manage/View/Public/css/main.css?20191001" />
 	<!-- 头部css文件|自定义  -->
 	
 
-	<script type="text/javascript" src="/lslx/Data/static/js/jquery-1.11.3.min.js"></script>
-	<script type="text/javascript" src="/lslx/Data/static/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/Data/static/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="/Data/static/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-		<script src="/lslx/Data/static/js/html5shiv.min.js"></script>
-		<script src="/lslx/Data/static/js/respond.min.js"></script>
+		<script src="/Data/static/js/html5shiv.min.js"></script>
+		<script src="/Data/static/js/respond.min.js"></script>
     <![endif]-->
 	
-	<script type="text/javascript" src="/lslx/App/Manage/View/Public/js/jquery.form.min.js"></script>
-	<script type="text/javascript" src="/lslx/Data/static/jq_plugins/layer/layer.js"></script>
+	<script type="text/javascript" src="/App/Manage/View/Public/js/jquery.form.min.js"></script>
+	<script type="text/javascript" src="/Data/static/jq_plugins/layer/layer.js"></script>
 	<script language="JavaScript">
 	    <!--
-	    var URL = '/lslx/xyhai.php?s=/Category';
-	    var APP	 = '/lslx/xyhai.php?s=';
-	    var SELF='/lslx/xyhai.php?s=/Category/add';
-	    var PUBLIC='/lslx/App/Manage/View/Public';
-	    var data_path = "/lslx/Data";
-		var tpl_public = "/lslx/App/Manage/View/Public";
+	    var URL = '/xyhai.php?s=/Category';
+	    var APP	 = '/xyhai.php?s=';
+	    var SELF='/xyhai.php?s=/Category/add';
+	    var PUBLIC='/App/Manage/View/Public';
+	    var data_path = "/Data";
+		var tpl_public = "/App/Manage/View/Public";
 	    //-->
 	</script>
-	<script type="text/javascript" src="/lslx/App/Manage/View/Public/js/common.js?20191001"></script> 
+	<script type="text/javascript" src="/App/Manage/View/Public/js/common.js?20191001"></script> 
 	<!-- 头部js文件|自定义 -->
 	
-<script type="text/javascript" src="/lslx/App/Manage/View/Public/js/XYHUploader/XYHUploader.js"></script>
+<script type="text/javascript" src="/App/Manage/View/Public/js/XYHUploader/XYHUploader.js"></script>
 <script type="text/javascript">
 	$(function(){
 

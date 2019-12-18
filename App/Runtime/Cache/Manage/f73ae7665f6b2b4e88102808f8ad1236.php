@@ -7,34 +7,34 @@
 	<title>后台</title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
-	<link rel="stylesheet" type="text/css" href="/lslx/Data/static/bootstrap/3.3.5/css/bootstrap.min.css" media="screen">	
-	<link rel='stylesheet' type="text/css" href="/lslx/App/Manage/View/Public/css/main.css?20191001" />
+	<link rel="stylesheet" type="text/css" href="/Data/static/bootstrap/3.3.5/css/bootstrap.min.css" media="screen">	
+	<link rel='stylesheet' type="text/css" href="/App/Manage/View/Public/css/main.css?20191001" />
 	<!-- 头部css文件|自定义  -->
 	
 
-	<script type="text/javascript" src="/lslx/Data/static/js/jquery-1.11.3.min.js"></script>
-	<script type="text/javascript" src="/lslx/Data/static/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/Data/static/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="/Data/static/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-		<script src="/lslx/Data/static/js/html5shiv.min.js"></script>
-		<script src="/lslx/Data/static/js/respond.min.js"></script>
+		<script src="/Data/static/js/html5shiv.min.js"></script>
+		<script src="/Data/static/js/respond.min.js"></script>
     <![endif]-->
 	
-	<script type="text/javascript" src="/lslx/App/Manage/View/Public/js/jquery.form.min.js"></script>
-	<script type="text/javascript" src="/lslx/Data/static/jq_plugins/layer/layer.js"></script>
+	<script type="text/javascript" src="/App/Manage/View/Public/js/jquery.form.min.js"></script>
+	<script type="text/javascript" src="/Data/static/jq_plugins/layer/layer.js"></script>
 	<script language="JavaScript">
 	    <!--
-	    var URL = '/lslx/xyhai.php?s=/Article';
-	    var APP	 = '/lslx/xyhai.php?s=';
-	    var SELF='/lslx/xyhai.php?s=/Article/index/pid/2';
-	    var PUBLIC='/lslx/App/Manage/View/Public';
-	    var data_path = "/lslx/Data";
-		var tpl_public = "/lslx/App/Manage/View/Public";
+	    var URL = '/xyhai.php?s=/Article';
+	    var APP	 = '/xyhai.php?s=';
+	    var SELF='/xyhai.php?s=/Article/index/pid/1';
+	    var PUBLIC='/App/Manage/View/Public';
+	    var data_path = "/Data";
+		var tpl_public = "/App/Manage/View/Public";
 	    //-->
 	</script>
-	<script type="text/javascript" src="/lslx/App/Manage/View/Public/js/common.js?20191001"></script> 
+	<script type="text/javascript" src="/App/Manage/View/Public/js/common.js?20191001"></script> 
 	<!-- 头部js文件|自定义 -->
 	
 </head>
@@ -120,7 +120,7 @@
                             <td><?php echo ($v["publish_time"]); ?></td>
                             <td><?php if(!empty($v['audit_status'])): ?><strong class="text-success">已审核</strong><?php else: ?><strong class="text-muted"><i>未审核</i></strong><?php endif; ?></td>
                             <td class="text-right">
-                            <?php if(ACTION_NAME == "index"): ?><a href="<?php echo (view_url($v)); ?>" target="_blank" class="label label-info">查看</a>
+                            <?php if(ACTION_NAME == "index"): ?><!-- <a href="<?php echo (view_url($v)); ?>" target="_blank" class="label label-info">查看</a> -->
                             <a href="<?php echo U('edit',array('id' => $v['id'],'pid' => $pid), '');?>" class="label label-success">编辑</a>
                             <a href="javascript:;" onclick="toConfirm('<?php echo U('del',array('id' => $v['id'], 'pid' => $pid), '');?>', '确实要删除吗？')" class="label label-danger">删除</a>
                             <?php else: ?>

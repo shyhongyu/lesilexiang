@@ -3,10 +3,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>XYHCMS</title>
-<link rel="stylesheet" href="/lslx/App/Manage/View/Public/css/login.css?v20160625" />
-<script type="text/javascript" src="/lslx/Data/static/js/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="/lslx/Data/static/jq_plugins/layer/layer.js"></script>
-<script type="text/javascript" src="/lslx/App/Manage/View/Public/js/login.js?v20160625000"></script>
+<link rel="stylesheet" href="/App/Manage/View/Public/css/login.css?v20160625" />
+<script type="text/javascript" src="/Data/static/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="/Data/static/jq_plugins/layer/layer.js"></script>
+<script type="text/javascript" src="/App/Manage/View/Public/js/login.js?v20160625000"></script>
 </head>	
 <body>
 	<div class="xyh-login">

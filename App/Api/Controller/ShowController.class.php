@@ -5,22 +5,21 @@ use Think\Controller;
 
 class ShowController extends Controller {
 	/**
-	 * 首页
+	 * 列表页
 	 *
 	 * @return void
 	 */	
 	public function index() {
-		$id = $id = I('id', 0, 'intval'); 
-		$where = ['cid'=>$id,'status'=>1];
+		$id = I('id', 0, 'intval'); 
+		$where = ['c.id'=>$id,'status'=>1];
 		$list = M('SearchAll')
-			->alias('a')
-			->field('a.arc_id,a.title,a.litpic,a.description,a.cid,a.audit_status,c.name as cate_name,c.status,c.seo_title')
-			->join('INNER JOIN __CATEGORY__ c ON c.id = a.cid')
-			->where($where)
-			->select();
-		echo json_encode(['state'=>200,'msg'=>'请求成功','data'=>$list]); 
-
-		
+				 ->alias('a')
+				 ->field('a.arc_id,c.name as cate_name,c.seo_title,a.title,b.description,b.content,a.litpic,b.publish_time,a.cid')
+				 ->join('INNER JOIN __CATEGORY__ c ON c.id = a.cid')
+				 ->join('INNER JOIN __ARTICLE__ b ON b.id = a.arc_id')
+				 ->where($where)
+				 ->select();	
+		echo json_encode(['state'=>200,'msg'=>'请求成功','data'=>$list]);	
 	}
 	/**
 	 * 首页banner
@@ -31,8 +30,67 @@ class ShowController extends Controller {
 		
 		$banner = M('abc_detail')->field('content,url')->select();
 		echo json_encode(['state'=>200,'msg'=>'请求成功','data'=>$banner]); 
-
 	}
 
+	/**
+	 * 详情页
+	 * 
+	 */
+	public function detail(){
+		$id = I('cid', 0, 'intval');//栏目id
+		$arc_id = I('arc_id', 0, 'intval');//文章id
+		$data = M('article')
+			->field('id,title,publish_time,litpic,content')
+			->where("id = $arc_id")
+			->find();
+ 		//上一篇
+		$where['id']=array('lt',$arc_id);//上一篇ID应该小于当前接收到的ID
+		$where['cid']=array('eq',$id);//分类ID
+		$front = M('article')->field('id,title,cid')->where($where)->order('id desc')->limit('1')->find();
+
+		//下一篇
+		$next['id']=array('gt',$arc_id);//下一篇ID应该大于当前接收到的ID
+		$next['cid']=array('eq',$id);//分类ID
+		$after = M('article')
+				->field('id,title,cid')
+				->where($next)
+				->order('id asc')
+				->limit('1')->find();
+ 		echo json_encode(['state'=>200,'msg'=>'请求成功','data'=>$data,'front'=>$front,'after'=>$after]); 	}
+	/**
+	 * 添加
+	 */
+	public function OnlineStudy(){
+			$type = I('type', 0, 'intval');
+			$tel = I('tel','', 'htmlspecialchars,rtrim');
+			$username = I('username','', 'htmlspecialchars,rtrim');
+			$email = I('email','', 'htmlspecialchars,rtrim');
+			$weixin = I('weixin','', 'htmlspecialchars,rtrim');
+			$content = I('content','', 'htmlspecialchars,rtrim');
+			$post_time = date('Y-m-d H:i:s');
+			$data = array(
+				'tel'=>$tel,
+				'username'=>$username,
+				'email'=>$email,
+				'weixin'=>$weixin,
+				'content'=>$content,
+				'post_time'=>$post_time,
+				'type'=>$type
+				);
+	    	$res  = M('guestbook')->add($data);
+			echo json_encode(['state'=>200,'msg'=>'留言成功','data'=>$res]);
+	}
+	/**
+	 * 新闻动态
+	 */
+	public function NewsList(){
+
+	}
+	/**
+	 * 搜索展示
+	 */
+	public function search(){
+		
+	}
 	
 }

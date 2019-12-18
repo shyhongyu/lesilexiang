@@ -66,35 +66,35 @@ $(function () {
 							<input type="text" name="title" id="inputTtitle" class="form-control" placeholder="标题" required="required" />									
 						</div>
 					</div>
-					<div class="form-group">
+					<!-- <div class="form-group">
 						<label for="inputShorttitle" class="col-sm-2 control-label">副标题</label>
 						<div class="col-sm-9">
 							<input type="text" name="short_title" id="inputShorttitle" class="form-control" placeholder="副标题" />									
 						</div>
-					</div>
+					</div> -->
 
-					<div class="form-group">
+					<!-- <div class="form-group">
 						<label for="inputColor" class="col-sm-2 control-label">标题颜色</label>
 						<div class="col-sm-5">
 							<input type="text" name="color" id="inputColor" class="form-control  iColorPicker" placeholder="标题颜色" />									
 						</div>
-					</div>
+					</div> -->
 
-					<div class="form-group">
+					<!-- <div class="form-group">
 						<label for="inputColor" class="col-sm-2 control-label">自定义属性</label>
 						<div class="col-sm-9">
 							<foreach name='flagtypelist' item='v'>
 							<label class="checkbox-inline"><input type='checkbox' name='flags[]' value='{$key}' <if condition="$key eq B_JUMP">id="CK_JumpUrl"</if> /> {$v}</label>
 							</foreach>								
 						</div>
-					</div>
+					</div> -->
 
-					<div class="form-group" id="JumpUrlDiv" style="display:none;">
+					<!-- <div class="form-group" id="JumpUrlDiv" style="display:none;">
 						<label for="inputJumpurl" class="col-sm-2 control-label">跳转网址</label>
 						<div class="col-sm-9">
 							<input type="text" name="jump_url" id="inputJumpurl" class="form-control" placeholder="跳转网址" />									
 						</div>
-					</div>
+					</div> -->
 
 					<div class="form-group">
 						<label for="inputProName" class="col-sm-2 control-label">所属栏目</label>
@@ -116,12 +116,12 @@ $(function () {
 
 
 
-					<div class="form-group">
+					<!-- <div class="form-group">
 						<label for="inputKeywords" class="col-sm-2 control-label">关键词</label>
 						<div class="col-sm-9">
 							<input type="text" name="keywords" id="inputKeywords" class="form-control" value="" placeholder="多关键词之间用“,”隔开" />						
 						</div>
-					</div>
+					</div> -->
 
 					<div class="form-group">
 						<label for="inputDescription" class="col-sm-2 control-label">摘要</label>
@@ -129,7 +129,7 @@ $(function () {
 							<textarea name="description" id="inputDescription" class="form-control"></textarea>								
 						</div>
 					</div>
-					<div class="form-group">
+					<!-- <div class="form-group">
 						<label for="inputAuthor" class="col-sm-2 control-label">作者</label>
 						<div class="col-sm-9">
 							<input type="text" name="author" id="inputAuthor" class="form-control" value="" placeholder="作者" />							
@@ -140,7 +140,7 @@ $(function () {
 						<div class="col-sm-9">
 							<input type="text" name="copyfrom" id="inputCopyfrom" class="form-control" value="" placeholder="来源" />							
 						</div>
-					</div>
+					</div> -->
 
 					<div class="form-group">
 						<label for="inputContent" class="col-sm-2 control-label">内容</label>
@@ -177,7 +177,7 @@ $(function () {
 						</div>
 					</div>
 
-					<div class="form-group">
+					<!-- <div class="form-group">
 						<label for="inputName" class="col-sm-2 control-label">点击数</label>
 						<div class="col-sm-2">
 							<input type="text" name="click" id="click" class="form-control" value="0" placeholder="点击数" />			
@@ -185,10 +185,10 @@ $(function () {
 						<div class="col-sm-7">	
 							<label class="checkbox-inline"><input type="checkbox" name="clickFlag" value="1" <if condition="C('CFG_CLICK_NUM_INIT') eq 0"> checked="checked"</if> /> 随机生成</label>	
 						</div>
-					</div>
+					</div> -->
 
 
-					<div class="form-group">
+					<!-- <div class="form-group">
 						<label for="inputName" class="col-sm-2 control-label">评论</label>
 						<div class="col-sm-9">
 							<label class="radio-inline">
@@ -198,9 +198,9 @@ $(function () {
 							 	<input type="radio" name="comment_flag" value="0" />禁止		
 							 </label>	
 						</div>
-					</div>		
+					</div>		 -->
 
-					<div class="form-group">
+					<!-- <div class="form-group">
 						<label for="inputAuditStatus" class="col-sm-2 control-label">审核状态</label>
 						<div class="col-sm-9">
 							<label class="radio-inline">
@@ -210,7 +210,7 @@ $(function () {
 							 	<input type="radio" name="audit_status" value="0" />未审核		
 							 </label>	
 						</div>
-					</div>						
+					</div>						 -->
 					<div class="row margin-botton-large">
 						<div class="col-sm-offset-2 col-sm-9">
 							<input type="hidden" name="pid" value="{$pid}" />

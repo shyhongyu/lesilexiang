@@ -69,14 +69,14 @@ $(function () {
 							<input type="text" name="title" id="inputTtitle" value="{$vo.title}" class="form-control" placeholder="标题" required="required" />									
 						</div>
 					</div>
-					<div class="form-group">
+					<!-- <div class="form-group">
 						<label for="inputShorttitle" class="col-sm-2 control-label">副标题</label>
 						<div class="col-sm-9">
 							<input type="text" name="short_title" id="inputShorttitle" value="{$vo.short_title}" class="form-control" placeholder="副标题" />									
 						</div>
-					</div>
+					</div> -->
 
-					<div class="form-group">
+					<!-- <div class="form-group">
 						<label for="inputColor" class="col-sm-2 control-label">标题颜色</label>
 						<div class="col-sm-5">
 							<input type="text" name="color" id="inputColor" value="{$vo.color}" class="form-control  iColorPicker" placeholder="标题颜色" />									
@@ -90,14 +90,14 @@ $(function () {
 							<label class="checkbox-inline"><input type='checkbox' name='flags[]' value='{$key}' <if condition="$key eq B_JUMP">id="CK_JumpUrl"</if> <if condition="($vo['flag'] & $key) eq $key">checked="checked"</if> /> {$v}</label>
 							</foreach>								
 						</div>
-					</div>
+					</div> -->
 
-					<div class="form-group" id="JumpUrlDiv" <if condition="($vo['flag'] & B_JUMP) eq 0">style="display:none;"</if>>
+					<!-- <div class="form-group" id="JumpUrlDiv" <if condition="($vo['flag'] & B_JUMP) eq 0">style="display:none;"</if>>
 						<label for="inputJumpurl" class="col-sm-2 control-label">跳转网址</label>
 						<div class="col-sm-9">
 							<input type="text" name="jump_url" id="inputJumpurl" value="{$vo.jump_url}" class="form-control" placeholder="跳转网址" />									
 						</div>
-					</div>
+					</div> -->
 
 					<div class="form-group">
 						<label for="inputProName" class="col-sm-2 control-label">所属栏目</label>
@@ -117,12 +117,12 @@ $(function () {
 						</div>						
 					</div>					
 
-					<div class="form-group">
+					<!-- <div class="form-group">
 						<label for="inputKeywords" class="col-sm-2 control-label">关键词</label>
 						<div class="col-sm-9">
 							<input type="text" name="keywords" id="inputKeywords" class="form-control" value="{$vo.keywords}" placeholder="多关键词之间用“,”隔开" />						
 						</div>
-					</div>
+					</div> -->
 
 					<div class="form-group">
 						<label for="inputDescription" class="col-sm-2 control-label">摘要</label>
@@ -130,7 +130,7 @@ $(function () {
 							<textarea name="description" id="inputDescription" class="form-control">{$vo.description}</textarea>								
 						</div>
 					</div>
-					<div class="form-group">
+					<!-- <div class="form-group">
 						<label for="inputAuthor" class="col-sm-2 control-label">作者</label>
 						<div class="col-sm-9">
 							<input type="text" name="author" id="inputAuthor" class="form-control"  value="{$vo.author}" placeholder="作者" />							
@@ -141,7 +141,7 @@ $(function () {
 						<div class="col-sm-9">
 							<input type="text" name="copyfrom" id="inputCopyfrom" class="form-control"  value="{$vo.copyfrom}" placeholder="来源" />							
 						</div>
-					</div>
+					</div> -->
 
 					<div class="form-group">
 						<label for="inputContent" class="col-sm-2 control-label">内容</label>
@@ -178,7 +178,7 @@ $(function () {
 						</div>
 					</div>
 
-					<div class="form-group">
+					<!-- <div class="form-group">
 						<label for="inputName" class="col-sm-2 control-label">评论</label>
 						<div class="col-sm-9">
 							<label class="radio-inline">
@@ -199,7 +199,7 @@ $(function () {
 							 	<input type="radio" name="audit_status" value="0" <if condition="$vo['audit_status'] eq 0">checked="checked"</if> />未审核		
 							 </label>	
 						</div>
-					</div>		
+					</div>		 -->
 					
 					<div class="row margin-botton-large">
 						<div class="col-sm-offset-2 col-sm-9">

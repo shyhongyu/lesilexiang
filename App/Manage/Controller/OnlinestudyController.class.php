@@ -24,21 +24,21 @@
  */
 namespace Manage\Controller;
 
-class GuestbookController extends CommonController {
+class OnlinestudyController extends CommonController {
 
 	public function index() {
 
-		$count = M('guestbook')->where("type =0")->count();
+		$count = M('guestbook')->where("type=1")->count();
 
 		$page           = new \Common\Lib\Page($count, 10);
 		$page->rollPage = 7;
 		$page->setConfig('theme', '%HEADER% %FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%');
 		$limit = $page->firstRow . ',' . $page->listRows;
-		$list  = M('guestbook')->where("type =0")->limit($limit)->select();
+		$list  = M('guestbook')->where("type=1")->limit($limit)->select();
 
 		$this->assign('page', $page->show());
 		$this->assign('vlist', $list);
-		$this->assign('type', '留言管理');
+		$this->assign('type', '在线学习');
 		$this->display();
 	}
 	//添加

@@ -26,9 +26,9 @@
 	<script type="text/javascript" src="/Data/static/jq_plugins/layer/layer.js"></script>
 	<script language="JavaScript">
 	    <!--
-	    var URL = '/xyhai.php?s=/Personal';
+	    var URL = '/xyhai.php?s=/Guestbook';
 	    var APP	 = '/xyhai.php?s=';
-	    var SELF='/xyhai.php?s=/Personal/index';
+	    var SELF='/xyhai.php?s=/Guestbook/add';
 	    var PUBLIC='/App/Manage/View/Public';
 	    var data_path = "/Data";
 		var tpl_public = "/App/Manage/View/Public";
@@ -37,6 +37,9 @@
 	<script type="text/javascript" src="/App/Manage/View/Public/js/common.js?20191001"></script> 
 	<!-- 头部js文件|自定义 -->
 	
+<script type="text/javascript" src="/App/Manage/View/Public/js/calendar.config.js"></script>
+
+
 </head>
 <body>
 	<div class="xyh-content">
@@ -44,7 +47,7 @@
 	<div class="row">
 		<div class="col-lg-12">
 			<h3 class="page-header"><em class="glyphicon glyphicon-cloud-upload"></em> 
-			<?php echo ($type); ?>
+			回复留言
 		    </h3>
 		</div>
 		
@@ -54,47 +57,69 @@
 	<div class="row">
 		<div class="col-lg-12">
 
-				<form method='post' class="form-horizontal" id="form_do" name="form_do" action="<?php echo U('index');?>">					
+				<form method='post' class="form-horizontal" id="form_do" name="form_do" action="<?php echo U('add');?>">	
 					<div class="form-group">
-						<label for="inputName" class="col-sm-2 control-label">用户名</label>
+						<label for="inputUsername" class="col-sm-2 control-label">姓名</label>
 						<div class="col-sm-9">
-							<p class="form-control-static"><?php echo (session('yang_adm_username')); ?></p>		
-						</div>
-					</div>				
-					<div class="form-group">
-						<label for="inputName" class="col-sm-2 control-label">最后登录时间</label>
-						<div class="col-sm-9">
-							<p class="form-control-static"><?php echo ($vo["login_time"]); ?></p>		
-						</div>
-					</div>				
-					<div class="form-group">
-						<label for="inputName" class="col-sm-2 control-label">最后登录IP</label>
-						<div class="col-sm-9">
-							<p class="form-control-static"><?php echo ($vo["login_ip"]); ?></p>		
+							<input type="text" name="username" id="inputUsername" class="form-control" placeholder="姓名" />	
 						</div>
 					</div>
+					<div class="form-group">
+						<label for="inputTel" class="col-sm-2 control-label">电话</label>
+						<div class="col-sm-9">
+							<input type="text" name="tel" id="inputTel" class="form-control" placeholder="电话" />				
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputEmail" class="col-sm-2 control-label">Email</label>
+						<div class="col-sm-9">
+							<input type="text" name="email" id="inputEmail" class="form-control" placeholder="Email" />
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label for="inputQQ" class="col-sm-2 control-label">QQ</label>
+						<div class="col-sm-9">
+							<input type="text" name="qq" id="inputQQ" class="form-control" placeholder="QQ" />
+						</div>
+					</div>				
+
 
 					<div class="form-group">
-						<label for="inputRealname" class="col-sm-2 control-label">真实姓名</label>
+						<label for="inputContent" class="col-sm-2 control-label">留言</label>
 						<div class="col-sm-9">
-							<input type="text" name="realname" id="inputRealname" value="<?php echo ($vo["realname"]); ?>" class="form-control" placeholder="真实姓名" />
+							<textarea name="content" id="inputContent" class="form-control" rows="6"></textarea>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="" class="col-sm-2 control-label">审核</label>
+						<div class="col-sm-9">
+							<select name="status" class="form-control">
+								<option value="0">未审核</option>
+								<option value="1" selected="selected">已审核</option>
+							</select>
 						</div>
 					</div>	
 
-
 					<div class="form-group">
-						<label for="inputEmail" class="col-sm-2 control-label">E-mail</label>
+						<label for="" class="col-sm-2 control-label">悄悄话</label>
 						<div class="col-sm-9">
-							<input type="text" name="email" id="inputEmail" value="<?php echo ($vo["email"]); ?>" class="form-control" placeholder="email" />
+							<select name="private_flag" class="form-control">
+								<option value="0" selected="selected">否</option>
+								<option value="1">是</option>
+							</select>
 						</div>
-					</div>				
+					</div>
+
 
 					<div class="row margin-botton-large">
 						<div class="col-sm-offset-2 col-sm-9">
-							<input type="hidden" name="uid" value="<?php echo ($vo["id"]); ?>" />
 							<div class="btn-group">							
 								<button type="submit" class="btn btn-primary"> <i class="glyphicon glyphicon-saved"></i>
 									保存
+								</button>
+								<button type="button" onclick="goUrl('<?php echo U('index');?>')" class="btn btn-default"> <i class="glyphicon glyphicon-chevron-left"></i>
+									返回
 								</button>
 							</div>
 						</div>

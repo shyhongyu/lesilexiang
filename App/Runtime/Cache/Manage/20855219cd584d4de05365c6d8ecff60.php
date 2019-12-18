@@ -26,9 +26,9 @@
 	<script type="text/javascript" src="/Data/static/jq_plugins/layer/layer.js"></script>
 	<script language="JavaScript">
 	    <!--
-	    var URL = '/xyhai.php?s=/ItemGroup';
+	    var URL = '/xyhai.php?s=/Onlinestudy';
 	    var APP	 = '/xyhai.php?s=';
-	    var SELF='/xyhai.php?s=/ItemGroup/index';
+	    var SELF='/xyhai.php?s=/Onlinestudy/index';
 	    var PUBLIC='/App/Manage/View/Public';
 	    var data_path = "/Data";
 		var tpl_public = "/App/Manage/View/Public";
@@ -53,10 +53,11 @@
     <div class="row margin-botton">
         <div class="col-sm-6 column">
             <div class="btn-group btn-group-md">
-                <button class="btn btn-primary" type="button" onclick="goUrl('<?php echo U('add');?>')"><em class="glyphicon glyphicon-plus-sign"></em> 添加分组</button>
-                <button class="btn btn-default" type="button" onclick="doConfirmBatch('<?php echo U('del', array('batchFlag' => 1));?>', '确实要删除选择项吗？')"><em class="glyphicon glyphicon-remove-circle"></em> 删除</button>
+                <!-- <button class="btn btn-primary" type="button" onclick="goUrl('<?php echo U('add');?>')"><em class="glyphicon glyphicon-plus-sign"></em> 我要留言</button> -->
+                <!-- <button class="btn btn-default" type="button" onclick="doGoBatch('<?php echo U('audit');?>')"><em class="glyphicon glyphicon-ok-circle"></em> 审核</button> -->
+                <button class="btn btn-default" type="button" onclick="doConfirmBatch('<?php echo U('del', array('batchFlag' => 1));?>', '确实要删除选择项吗？')"><em class="glyphicon glyphicon-remove-circle"></em> 批量删除</button>
             </div>
-        </div>
+        </div>        
     </div>
 
     <div class="row">
@@ -68,8 +69,11 @@
                             <tr class="active">
                                 <th><input type="checkbox" id="check"></th>
                                 <th>编号</th>
-                                <th>组名</th>
-                                <th>状态</th>
+                                <th>姓名</th>
+                                <th>电话</th>
+                                <th>邮箱</th>
+                                <!-- <th>留言</th> -->
+                                <!-- <th>审核</th> -->
                                 <th class="text-right">操作</th>
                             </tr>
                         </thead>
@@ -77,12 +81,28 @@
                         <?php if(is_array($vlist)): foreach($vlist as $key=>$v): ?><tr>
                             <td><input type="checkbox" name="key[]" value="<?php echo ($v["id"]); ?>"></td>
                             <td><?php echo ($v["id"]); ?></td>
-                            <td><a href="<?php echo U('ItemInfo/index',array('group' => $v['name']), '');?>"><?php echo ($v["name"]); ?> | <?php echo ($v["remark"]); ?></a></td>
-                            <td>
-                                <?php if(!empty($v['status'])): ?><strong class="text-success">正常</strong><?php else: ?><strong class="text-muted"><i>禁用</i></strong><?php endif; ?>
-                            </td>
-                            <td class="text-right">
-                                <a href="<?php echo U('edit',array('id' => $v['id']), '');?>" class="label label-success">编辑</a>
+                            <td><?php echo ($v["username"]); ?>
+                                <!-- <p>
+                                <strong>姓名：</strong><?php if($v['user_id']): ?><a href="<?php echo ($v["user_id"]); ?>" target="_blank"><?php echo ($v["username"]); ?></a><?php else: echo ($v["username"]); endif; ?>
+                                <strong>来自：</strong><?php echo ($v["ip"]); ?> <strong>电话：</strong><?php echo ($v["tel"]); ?> <strong>QQ：</strong><?php echo ($v["qq"]); ?><br/>
+                                </p>
+                                <p>
+                                <strong>留言：</strong><?php echo ($v["content"]); ?> [<?php echo ($v["post_time"]); ?>]<br/>
+                                </p> -->
+                                <!-- <?php if(!empty($v['reply_time'])): ?><div style="border: 1px solid #ccc; background-color: #fcffd0;padding: 5px;">
+                                <strong>回复：</strong><?php echo ($v["reply"]); ?> [<?php echo ($v["reply_time"]); ?>]
+                                </div><?php endif; ?> -->
+                             </td>  
+                             <td><?php echo ($v["tel"]); ?></td> 
+                             <td><?php echo ($v["email"]); ?></td> 
+                             <!-- <td><?php echo ($v["content"]); ?></td>            -->
+                            <!-- <td class="">
+                                <?php if(!empty($v['status'])): ?><strong class="text-success">已审核</strong><?php else: ?><strong class="text-muted"><i>未审核</i></strong><?php endif; ?>
+                                <?php if(!empty($v['private_flag'])): ?><strong class="text-info"><i>悄悄话</i></strong><?php endif; ?>
+                    
+                            </td>                     -->
+                            <td class="text-right">                                
+                                <!-- <a href="<?php echo U('reply',array('id' => $v['id']), '');?>" class="label label-success">回复</a> -->
                                 <a href="javascript:;" onclick="toConfirm('<?php echo U('del',array('id' => $v['id']), '');?>', '确实要删除吗？')" class="label label-danger">删除</a>
                     
                             </td>

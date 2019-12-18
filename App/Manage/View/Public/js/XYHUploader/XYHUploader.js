@@ -51,8 +51,8 @@
 
         var objTop = $('<div class="xupload-content">' 
                         + '  <form action="'+ opts.furl +'" method="post" enctype="multipart/form-data">' 
-                        + '  <button class="btn btn-primary" style="'+ (opts.showOutLink ? 'display:;' : 'display:none;')+'" type="button" data-name="xupload-out-link"><em class="glyphicon glyphicon-retweet"></em> 添加'+ _btnName +'链接</button>' 
-                        + '  <button class="btn btn-primary" type="button" data-name="xupload-brower-picture"><em class="glyphicon glyphicon-plus-sign"></em> 选择站内'+ _btnName +'</button>' 
+                        // + '  <button class="btn btn-primary" style="'+ (opts.showOutLink ? 'display:;' : 'display:none;')+'" type="button" data-name="xupload-out-link"><em class="glyphicon glyphicon-retweet"></em> 添加'+ _btnName +'链接</button>' 
+                        // + '  <button class="btn btn-primary" type="button" data-name="xupload-brower-picture"><em class="glyphicon glyphicon-plus-sign"></em> 选择站内'+ _btnName +'</button>' 
                         + '  <div class="btn btn-success up-picture-btn">' 
                         + '   <span><em class="glyphicon glyphicon-plus-sign"></em>上传'+ _btnName +'</span>' 
                         + '   <input type="file" name="file">' 

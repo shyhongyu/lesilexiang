@@ -11,7 +11,7 @@ if (version_compare(PHP_VERSION, '5.3.0', '<')) {
 	die('require PHP > 5.3.0 !');
 }
 
-define('APP_DEBUG', false); //是否调试//部署阶段注释或者设为false
+define('APP_DEBUG', true); //是否调试//部署阶段注释或者设为false
 define('APP_PATH', "./App/"); //项目路径
 define('THINK_PATH', "./Include/");
 

@@ -28,7 +28,7 @@
 	    <!--
 	    var URL = '/xyhai.php?s=/Article';
 	    var APP	 = '/xyhai.php?s=';
-	    var SELF='/xyhai.php?s=/Article/add/pid/1';
+	    var SELF='/xyhai.php?s=/Article/edit/id/1/pid/1';
 	    var PUBLIC='/App/Manage/View/Public';
 	    var data_path = "/Data";
 		var tpl_public = "/App/Manage/View/Public";
@@ -77,6 +77,9 @@ $(function () {
 
 
 
+
+
+
 </script>
 	
 
@@ -87,7 +90,7 @@ $(function () {
 	<div class="row">
 		<div class="col-lg-12">
 			<h3 class="page-header"><em class="glyphicon glyphicon-cloud-upload"></em> 
-			添加文章  
+			修改文章  
 		    </h3>
 		</div>
 		
@@ -97,39 +100,39 @@ $(function () {
 	<div class="row">
 		<div class="col-lg-12">
 
-				<form method='post' class="form-horizontal" id="form_do" name="form_do" action="<?php echo U('add');?>">											
+				<form method='post' class="form-horizontal" id="form_do" name="form_do" action="<?php echo U('edit');?>">											
 
 					<div class="form-group">
 						<label for="inputTtitle" class="col-sm-2 control-label">标题</label>
 						<div class="col-sm-9">
-							<input type="text" name="title" id="inputTtitle" class="form-control" placeholder="标题" required="required" />									
+							<input type="text" name="title" id="inputTtitle" value="<?php echo ($vo["title"]); ?>" class="form-control" placeholder="标题" required="required" />									
 						</div>
 					</div>
 					<!-- <div class="form-group">
 						<label for="inputShorttitle" class="col-sm-2 control-label">副标题</label>
 						<div class="col-sm-9">
-							<input type="text" name="short_title" id="inputShorttitle" class="form-control" placeholder="副标题" />									
+							<input type="text" name="short_title" id="inputShorttitle" value="<?php echo ($vo["short_title"]); ?>" class="form-control" placeholder="副标题" />									
 						</div>
 					</div> -->
 
 					<!-- <div class="form-group">
 						<label for="inputColor" class="col-sm-2 control-label">标题颜色</label>
 						<div class="col-sm-5">
-							<input type="text" name="color" id="inputColor" class="form-control  iColorPicker" placeholder="标题颜色" />									
+							<input type="text" name="color" id="inputColor" value="<?php echo ($vo["color"]); ?>" class="form-control  iColorPicker" placeholder="标题颜色" />									
 						</div>
-					</div> -->
+					</div>
 
-					<!-- <div class="form-group">
+					<div class="form-group">
 						<label for="inputColor" class="col-sm-2 control-label">自定义属性</label>
 						<div class="col-sm-9">
-							<?php if(is_array($flagtypelist)): foreach($flagtypelist as $key=>$v): ?><label class="checkbox-inline"><input type='checkbox' name='flags[]' value='<?php echo ($key); ?>' <?php if($key == B_JUMP): ?>id="CK_JumpUrl"<?php endif; ?> /> <?php echo ($v); ?></label><?php endforeach; endif; ?>								
+							<?php if(is_array($flagtypelist)): foreach($flagtypelist as $key=>$v): ?><label class="checkbox-inline"><input type='checkbox' name='flags[]' value='<?php echo ($key); ?>' <?php if($key == B_JUMP): ?>id="CK_JumpUrl"<?php endif; ?> <?php if(($vo['flag'] & $key) == $key): ?>checked="checked"<?php endif; ?> /> <?php echo ($v); ?></label><?php endforeach; endif; ?>								
 						</div>
 					</div> -->
 
-					<!-- <div class="form-group" id="JumpUrlDiv" style="display:none;">
+					<!-- <div class="form-group" id="JumpUrlDiv" <?php if(($vo['flag'] & B_JUMP) == 0): ?>style="display:none;"<?php endif; ?>>
 						<label for="inputJumpurl" class="col-sm-2 control-label">跳转网址</label>
 						<div class="col-sm-9">
-							<input type="text" name="jump_url" id="inputJumpurl" class="form-control" placeholder="跳转网址" />									
+							<input type="text" name="jump_url" id="inputJumpurl" value="<?php echo ($vo["jump_url"]); ?>" class="form-control" placeholder="跳转网址" />									
 						</div>
 					</div> -->
 
@@ -137,7 +140,7 @@ $(function () {
 						<label for="inputProName" class="col-sm-2 control-label">所属栏目</label>
 						<div class="col-sm-9">
 							<select name="cid" class="form-control">
-								<?php if(is_array($cate)): $i = 0; $__LIST__ = $cate;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><option value="<?php echo ($v["id"]); ?>" <?php if($pid == $v['id']): ?>selected="selected"<?php endif; ?>><?php echo ($v["delimiter"]); echo ($v["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+								<?php if(is_array($cate)): $i = 0; $__LIST__ = $cate;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><option value="<?php echo ($v["id"]); ?>" <?php if($vo['cid'] == $v['id']): ?>selected="selected"<?php endif; ?>><?php echo ($v["delimiter"]); echo ($v["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
 							</select>									
 						</div>
 					</div>
@@ -145,49 +148,47 @@ $(function () {
 					<div class="form-group">
 						<label for="litpic" class="col-sm-2 control-label">图片</label>
 						<div class="col-sm-9">
-							    <input type="text" class="form-control" name="litpic" id="litpic"  value="" placeholder="图片地址" />	
-						</div>
-					</div>
-
-
+							    <input type="text" class="form-control" name="litpic" id="litpic"   value="<?php echo ($vo["litpic"]); ?>" placeholder="图片地址" />	
+						</div>						
+					</div>					
 
 					<!-- <div class="form-group">
 						<label for="inputKeywords" class="col-sm-2 control-label">关键词</label>
 						<div class="col-sm-9">
-							<input type="text" name="keywords" id="inputKeywords" class="form-control" value="" placeholder="多关键词之间用“,”隔开" />						
+							<input type="text" name="keywords" id="inputKeywords" class="form-control" value="<?php echo ($vo["keywords"]); ?>" placeholder="多关键词之间用“,”隔开" />						
 						</div>
 					</div> -->
 
 					<div class="form-group">
 						<label for="inputDescription" class="col-sm-2 control-label">摘要</label>
 						<div class="col-sm-9">
-							<textarea name="description" id="inputDescription" class="form-control"></textarea>								
+							<textarea name="description" id="inputDescription" class="form-control"><?php echo ($vo["description"]); ?></textarea>								
 						</div>
 					</div>
 					<!-- <div class="form-group">
 						<label for="inputAuthor" class="col-sm-2 control-label">作者</label>
 						<div class="col-sm-9">
-							<input type="text" name="author" id="inputAuthor" class="form-control" value="" placeholder="作者" />							
+							<input type="text" name="author" id="inputAuthor" class="form-control"  value="<?php echo ($vo["author"]); ?>" placeholder="作者" />							
 						</div>
 					</div>
 					<div class="form-group">
 						<label for="inputCopyfrom" class="col-sm-2 control-label">来源</label>
 						<div class="col-sm-9">
-							<input type="text" name="copyfrom" id="inputCopyfrom" class="form-control" value="" placeholder="来源" />							
+							<input type="text" name="copyfrom" id="inputCopyfrom" class="form-control"  value="<?php echo ($vo["copyfrom"]); ?>" placeholder="来源" />							
 						</div>
 					</div> -->
 
 					<div class="form-group">
 						<label for="inputContent" class="col-sm-2 control-label">内容</label>
 						<div class="col-sm-9">
-							<textarea name="content" id="inputContent" style="height: 370px;"></textarea>						
+							<textarea name="content" id="inputContent" style="height: 370px;"><?php echo ($vo["content"]); ?></textarea>						
 						</div>
 					</div>					
 
 					<div class="form-group">
 						<label for="inputPublishtime" class="col-sm-2 control-label">发布时间</label>
 						<div class="col-sm-4">
-							<input type="text" class="form-control" name="publish_time" id="inputPublishtime" value="<?php echo date('Y-m-d H:i:s',time());?>">
+							<input type="text" class="form-control" name="publish_time" id="inputPublishtime" value="<?php echo ($vo["publish_time"]); ?>">
 			                <script type="text/javascript">
 			                    Calendar.setup({
 			                        weekNumbers: true,
@@ -205,7 +206,7 @@ $(function () {
 					<div class="form-group">
 						<label for="inputShorttitle" class="col-sm-2 control-label">权重</label>
 						<div class="col-sm-2">
-							<input type="text" name="point" id="inputPoint" value="100" class="form-control" placeholder="权重" />	
+							<input type="text" name="point" id="inputPoint" value="<?php echo ($vo["point"]); ?>" class="form-control" placeholder="权重" />	
 						</div>
 						<div class="col-sm-7">
 							<label class="checkbox-inline">权重用于排序，从大到小，排序优先</label>	
@@ -213,42 +214,33 @@ $(function () {
 					</div>
 
 					<!-- <div class="form-group">
-						<label for="inputName" class="col-sm-2 control-label">点击数</label>
-						<div class="col-sm-2">
-							<input type="text" name="click" id="click" class="form-control" value="0" placeholder="点击数" />			
-						</div>
-						<div class="col-sm-7">	
-							<label class="checkbox-inline"><input type="checkbox" name="clickFlag" value="1" <?php if(C('CFG_CLICK_NUM_INIT') == 0): ?>checked="checked"<?php endif; ?> /> 随机生成</label>	
-						</div>
-					</div> -->
-
-
-					<!-- <div class="form-group">
 						<label for="inputName" class="col-sm-2 control-label">评论</label>
 						<div class="col-sm-9">
 							<label class="radio-inline">
-							 	<input type="radio" name="comment_flag" value="1" checked="checked" />允许				
+							 	<input type="radio" name="comment_flag" value="1" <?php if($vo['comment_flag'] == 1): ?>checked="checked"<?php endif; ?> />允许				
 							 </label>
 							<label class="radio-inline">
-							 	<input type="radio" name="comment_flag" value="0" />禁止		
+							 	<input type="radio" name="comment_flag" value="0"  <?php if($vo['comment_flag'] == 0): ?>checked="checked"<?php endif; ?> />禁止		
 							 </label>	
 						</div>
-					</div>		 -->
-
-					<!-- <div class="form-group">
+					</div>
+					<div class="form-group">
 						<label for="inputAuditStatus" class="col-sm-2 control-label">审核状态</label>
 						<div class="col-sm-9">
 							<label class="radio-inline">
-							 	<input type="radio" name="audit_status" value="1" checked="checked" />已审核				
+							 	<input type="radio" name="audit_status" value="1" <?php if($vo['audit_status'] == 1): ?>checked="checked"<?php endif; ?> />已审核				
 							 </label>
 							<label class="radio-inline">
-							 	<input type="radio" name="audit_status" value="0" />未审核		
+							 	<input type="radio" name="audit_status" value="0" <?php if($vo['audit_status'] == 0): ?>checked="checked"<?php endif; ?> />未审核		
 							 </label>	
 						</div>
-					</div>						 -->
+					</div>		 -->
+					
 					<div class="row margin-botton-large">
 						<div class="col-sm-offset-2 col-sm-9">
+							<input type="hidden" name="id" value="<?php echo ($vo["id"]); ?>" />
 							<input type="hidden" name="pid" value="<?php echo ($pid); ?>" />
+							<input type="hidden" name="old_cid" value="<?php echo ($vo["cid"]); ?>" />
 							<div class="btn-group">
 								<button type="submit" class="btn btn-primary"> <i class="glyphicon glyphicon-saved"></i>
 									保存

@@ -26,8 +26,8 @@
       <ul>
 	    <li id="i_self"><?php echo (session('yang_adm_username')); ?></li>
 		<li id="i_hide_menu"><a href="#" id="togglemenu">隐藏菜单</a></li>
-        <li id="i_home"><a href="<?php echo C('CFG_WEBURL');?>" target="_blank">首页</a></li> 
-        <li id="i_help"><a href="<?php echo go_link('http://www.xyhcms.com/');?>" target="_blank">帮助</a></li>    
+        <!-- <li id="i_home"><a href="<?php echo C('CFG_WEBURL');?>" target="_blank">首页</a></li>  -->
+        <!-- <li id="i_help"><a href="<?php echo go_link('http://www.xyhcms.com/');?>" target="_blank">帮助</a></li>     -->
         <li id="i_exit"><a href="<?php echo U('Login/logout');?>" target="_top">退出</a></li>		
       </ul>
     </div>

@@ -1,0 +1,212 @@
+[ 2019-12-17T15:30:49+08:00 ] 192.168.2.107 /index.php/api/show/index?id=2
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.content' in 'field list'
+
+[ 2019-12-17T15:33:01+08:00 ] 192.168.2.107 /index.php/api/show/index?id=2
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'cid' in where clause is ambiguous
+
+[ 2019-12-17T15:33:02+08:00 ] 192.168.2.107 /index.php/api/show/index?id=2
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'cid' in where clause is ambiguous
+
+[ 2019-12-17T15:33:36+08:00 ] 192.168.2.107 /index.php/api/show/index?id=2
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'cid' in where clause is ambiguous
+
+[ 2019-12-17T15:33:37+08:00 ] 192.168.2.107 /index.php/api/show/index?id=2
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'cid' in where clause is ambiguous
+
+[ 2019-12-17T15:35:22+08:00 ] 192.168.2.107 /index.php/api/show/index?id=2
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'cid' in where clause is ambiguous
+
+[ 2019-12-17T15:36:07+08:00 ] 192.168.2.107 /index.php/api/show/index?id=2
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'lslx.article' doesn't exist
+
+[ 2019-12-17T15:36:08+08:00 ] 192.168.2.107 /index.php/api/show/index?id=2
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'lslx.article' doesn't exist
+
+[ 2019-12-17T15:36:09+08:00 ] 192.168.2.107 /index.php/api/show/index?id=2
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'lslx.article' doesn't exist
+
+[ 2019-12-17T15:36:10+08:00 ] 192.168.2.107 /index.php/api/show/index?id=2
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'lslx.article' doesn't exist
+
+[ 2019-12-17T15:37:10+08:00 ] 192.168.2.107 /index.php/api/show/index?id=2
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'cid' in where clause is ambiguous
+
+[ 2019-12-17T15:37:11+08:00 ] 192.168.2.107 /index.php/api/show/index?id=2
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'cid' in where clause is ambiguous
+
+[ 2019-12-17T15:37:12+08:00 ] 192.168.2.107 /index.php/api/show/index?id=2
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'cid' in where clause is ambiguous
+
+[ 2019-12-17T15:37:13+08:00 ] 192.168.2.107 /index.php/api/show/index?id=2
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'cid' in where clause is ambiguous
+
+[ 2019-12-17T15:39:25+08:00 ] 192.168.2.107 /index.php/api/show/index?id=2
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '' in 'field list'
+
+[ 2019-12-17T16:25:17+08:00 ] 192.168.2.107 /index.php/api/show/index.php?id=1
+ERR: 非法操作:index.php
+
+[ 2019-12-17T16:26:02+08:00 ] 192.168.2.107 /index.php/api/show/index.php?id=1
+ERR: 非法操作:index.php
+
+[ 2019-12-17T16:26:15+08:00 ] 192.168.2.107 /index.php/api/show/index.php?id=1
+ERR: 非法操作:index.php
+
+[ 2019-12-17T16:26:16+08:00 ] 192.168.2.107 /index.php/api/show/index.php?id=1
+ERR: 非法操作:index.php
+
+[ 2019-12-17T16:27:40+08:00 ] 192.168.2.107 /index.php/api/show/index.php?id=1
+ERR: 非法操作:index.php
+
+[ 2019-12-17T16:27:41+08:00 ] 192.168.2.107 /index.php/api/show/index.php?id=1
+ERR: 非法操作:index.php
+
+[ 2019-12-17T16:34:07+08:00 ] 192.168.2.107 /index.php/api/show/index?id=1
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'cid' in where clause is ambiguous
+
+[ 2019-12-17T16:38:09+08:00 ] 192.168.2.107 /index.php/api/show/index
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'cid' in where clause is ambiguous
+
+[ 2019-12-17T16:38:41+08:00 ] 192.168.2.107 /index.php/api/show/index?id=1
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'cid' in where clause is ambiguous
+
+[ 2019-12-17T16:39:43+08:00 ] 192.168.2.107 /index.php/api/show/index?id=2
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'cid' in where clause is ambiguous
+
+[ 2019-12-17T16:41:23+08:00 ] 192.168.2.107 /index.php/api/show/index?id=2
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'b.descirption' in 'field list'
+
+[ 2019-12-17T16:47:33+08:00 ] 192.168.2.107 /index.php/api/show/OnlineStudy?tel=18610449744
+NOTIC: [8] Undefined variable: tel D:\phpStudy\PHPTutorial\WWW\lslx\App\Api\Controller\ShowController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: username D:\phpStudy\PHPTutorial\WWW\lslx\App\Api\Controller\ShowController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: email D:\phpStudy\PHPTutorial\WWW\lslx\App\Api\Controller\ShowController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: weixin D:\phpStudy\PHPTutorial\WWW\lslx\App\Api\Controller\ShowController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: content D:\phpStudy\PHPTutorial\WWW\lslx\App\Api\Controller\ShowController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: post_time D:\phpStudy\PHPTutorial\WWW\lslx\App\Api\Controller\ShowController.class.php 第 59 行.
+
+[ 2019-12-17T16:50:31+08:00 ] 192.168.2.107 /index.php/api/show/OnlineStudy?tel=18610449744&email=123@qq.com&weixin=1253628525
+NOTIC: [8] Undefined variable: tel D:\phpStudy\PHPTutorial\WWW\lslx\App\Api\Controller\ShowController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: username D:\phpStudy\PHPTutorial\WWW\lslx\App\Api\Controller\ShowController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: email D:\phpStudy\PHPTutorial\WWW\lslx\App\Api\Controller\ShowController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: weixin D:\phpStudy\PHPTutorial\WWW\lslx\App\Api\Controller\ShowController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: content D:\phpStudy\PHPTutorial\WWW\lslx\App\Api\Controller\ShowController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: post_time D:\phpStudy\PHPTutorial\WWW\lslx\App\Api\Controller\ShowController.class.php 第 59 行.
+
+[ 2019-12-17T16:54:50+08:00 ] 192.168.2.107 /index.php/api/show/OnlineStudy?tel=18610449744&email=123@qq.com&weixin=1253628525&username=zhangsna&content=122626
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+SQL: SHOW COLUMNS FROM `xyh_guestbook` [ RunTime:0.0188s ]
+SQL: INSERT INTO `xyh_guestbook` (`tel`,`username`,`email`,`weixin`,`content`,`post_time`) VALUES ('18610449744','zhangsna','123@qq.com','1253628525','122626','2019-12-17 16:54:50') [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000563s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000594s ]
+
+[ 2019-12-17T16:57:03+08:00 ] 192.168.2.107 /index.php/api/show/OnlineStudy?tel=18610449744&email=123@qq.com&weixin=1253628525&username=zhangsna&content=122626
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+SQL: SHOW COLUMNS FROM `xyh_guestbook` [ RunTime:0.0029s ]
+ERR: Think\Model:insert方法不存在！
+
+[ 2019-12-17T16:57:19+08:00 ] 192.168.2.107 /index.php/api/show/OnlineStudy?tel=18610449744&email=123@qq.com&weixin=1253628525&username=zhangsna&content=122626
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+SQL: SHOW COLUMNS FROM `xyh_guestbook` [ RunTime:0.0031s ]
+SQL: INSERT INTO `xyh_guestbook` (`tel`,`username`,`email`,`weixin`,`content`,`post_time`) VALUES ('18610449744','zhangsna','123@qq.com','1253628525','122626','2019-12-17 16:57:19') [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000639s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000675s ]
+
+[ 2019-12-17T16:57:30+08:00 ] 192.168.2.107 /index.php/api/show/OnlineStudy?tel=18610449744&emai=123@qq.com&weixin=1253628525&username=zhangsna&content=122626
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+SQL: SHOW COLUMNS FROM `xyh_guestbook` [ RunTime:0.0023s ]
+SQL: INSERT INTO `xyh_guestbook` (`tel`,`username`,`email`,`weixin`,`content`,`post_time`) VALUES ('18610449744','zhangsna','','1253628525','122626','2019-12-17 16:57:30') [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000872s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000918s ]
+
+[ 2019-12-17T17:04:54+08:00 ] 192.168.2.107 /index.php/api/show/OnlineStudy?tel=18610449744&emai=123@qq.com&weixin=1253628525&username=zhangsna&content=122626
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+SQL: SHOW COLUMNS FROM `xyh_guestbook` [ RunTime:0.0280s ]
+SQL: INSERT INTO `xyh_guestbook` (`tel`,`username`,`email`,`weixin`,`post_time`) VALUES ('18610449744','zhangsna','','1253628525','2019-12-17 17:04:54') [ RunTime:0.0294s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000664s ]
+
+[ 2019-12-17T18:08:20+08:00 ] 192.168.2.107 /index.php/api/show/index?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0287s ]
+SQL: SELECT a.arc_id,c.name as cate_name,c.seo_title,a.title,b.description,b.content,a.litpic,b.publish_time,a.cid FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 2 AND `status` = 1  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000511s ]
+
+[ 2019-12-17T18:08:57+08:00 ] 192.168.2.107 /index.php/api/show/index?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.2830s ]
+SQL: SELECT a.arc_id,c.name as cate_name,c.seo_title,a.title,b.description,b.content,a.litpic,b.publish_time,a.cid FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 2 AND `status` = 1  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000635s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000671s ]
+
+[ 2019-12-17T18:26:07+08:00 ] 192.168.2.107 /index.php/api/show/detail?cid=2&arc_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0102s ]
+SQL: SELECT `id`,`title`,`publish_time`,`litpic`,`content` FROM `xyh_article` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`short_title`,`cid` FROM `xyh_article` WHERE `id` < 1 AND `cid` = 2 ORDER BY id desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`short_title`,`cid` FROM `xyh_article` WHERE `id` > 1 AND `cid` = 2 ORDER BY id asc LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000619s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000651s ]
+
+[ 2019-12-17T18:27:27+08:00 ] 192.168.2.107 /index.php/api/show/detail?cid=2&arc_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0235s ]
+SQL: SELECT `id`,`title`,`publish_time`,`litpic`,`content` FROM `xyh_article` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`short_title`,`cid` FROM `xyh_article` WHERE `id` < 1 AND `cid` = 2 ORDER BY id desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`short_title`,`cid` FROM `xyh_article` WHERE `id` > 1 AND `cid` = 2 ORDER BY id asc LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000396s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000418s ]
+

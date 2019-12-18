@@ -1,0 +1,75 @@
+[ 2019-12-17T18:06:38+08:00 ] 192.168.2.107 /index.php?s=/Home/Show/index/cid/2/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+SQL: SHOW COLUMNS FROM `xyh_category_access` [ RunTime:0.0964s ]
+SQL: SELECT `role_id` FROM `xyh_category_access` WHERE `cat_id` = 2 AND `flag` = 0 AND `action` = 'visit'  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0536s ]
+SQL: SELECT * FROM `xyh_article` WHERE `delete_status` = 0 AND `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000248s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `xyh_announce` [ RunTime:0.0497s ]
+SQL: SELECT * FROM `xyh_announce` WHERE `end_time` > '2019-12-17 18:06:38' ORDER BY start_time DESC LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `xyh_category` [ RunTime:0.0415s ]
+SQL: SELECT article.id AS id,article.title AS title,article.short_title AS short_title,article.color AS color,article.copyfrom AS copyfrom,article.author AS author,article.keywords AS keywords,article.litpic AS litpic,article.description AS description,article.publish_time AS publish_time,article.update_time AS update_time,article.click AS click,article.cid AS cid,article.point AS point,article.comment_flag AS comment_flag,article.flag AS flag,article.jump_url AS jump_url,article.delete_status AS delete_status,article.audit_status AS audit_status,article.user_id AS user_id,article.aid AS aid,category.name AS cate_name,category.ename AS ename,category.model_id AS model_id,category.status AS cate_status FROM xyh_article article LEFT JOIN xyh_category category ON article.cid = category.id WHERE article.delete_status = 0 AND article.cid IN (2) AND article.audit_status = 1 AND category.status < 2 ORDER BY article.point DESC,article.id DESC LIMIT 10   [ RunTime:0.0007s ]
+SQL: SELECT `click` FROM `xyh_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: UPDATE `xyh_article` SET `click`=click+1 WHERE `id` = 1 [ RunTime:0.0011s ]
+SQL: SELECT article.id AS id,article.title AS title,article.short_title AS short_title,article.color AS color,article.copyfrom AS copyfrom,article.author AS author,article.keywords AS keywords,article.litpic AS litpic,article.content AS content,article.description AS description,article.publish_time AS publish_time,article.update_time AS update_time,article.click AS click,article.cid AS cid,article.point AS point,article.comment_flag AS comment_flag,article.flag AS flag,article.jump_url AS jump_url,article.delete_status AS delete_status,article.audit_status AS audit_status,article.user_id AS user_id,article.aid AS aid,category.name AS cate_name,category.ename AS ename,category.model_id AS model_id,category.status AS cate_status FROM xyh_article article LEFT JOIN xyh_category category ON article.cid = category.id WHERE article.delete_status = 0 AND article.cid = '2' AND article.id < '1' ORDER BY article.id desc LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT article.id AS id,article.title AS title,article.short_title AS short_title,article.color AS color,article.copyfrom AS copyfrom,article.author AS author,article.keywords AS keywords,article.litpic AS litpic,article.content AS content,article.description AS description,article.publish_time AS publish_time,article.update_time AS update_time,article.click AS click,article.cid AS cid,article.point AS point,article.comment_flag AS comment_flag,article.flag AS flag,article.jump_url AS jump_url,article.delete_status AS delete_status,article.audit_status AS audit_status,article.user_id AS user_id,article.aid AS aid,category.name AS cate_name,category.ename AS ename,category.model_id AS model_id,category.status AS cate_status FROM xyh_article article LEFT JOIN xyh_category category ON article.cid = category.id WHERE article.delete_status = 0 AND article.cid = '2' AND article.id > '1' ORDER BY article.id ASC LIMIT 1   [ RunTime:0.0011s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.426140s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.426210s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000771s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001265s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001343s ]
+
+[ 2019-12-17T18:06:39+08:00 ] 192.168.2.107 /index.php?s=/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000533s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000589s ]
+
+[ 2019-12-17T18:06:39+08:00 ] 192.168.2.107 /index.php?s=/Home/Public/online.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000448s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000483s ]
+
+[ 2019-12-17T18:06:39+08:00 ] 192.168.2.107 /index.php?s=/Home/Review/getlist.html&model_id=1&post_id=1&num=5&page=1&avatar=middle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+SQL: SHOW COLUMNS FROM `xyh_comment` [ RunTime:0.0366s ]
+SQL: SHOW COLUMNS FROM `xyh_model` [ RunTime:0.0694s ]
+SQL: SHOW COLUMNS FROM `xyh_member` [ RunTime:0.1129s ]
+SQL: SELECT COUNT(*) AS tp_count FROM xyh_comment comment LEFT JOIN xyh_model model ON comment.model_id = model.id LEFT JOIN xyh_member member ON comment.user_id = member.id WHERE comment.pid = 0 AND comment.post_id = 1 AND comment.model_id = 1 AND comment.status = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT comment.id AS id,comment.post_id AS post_id,comment.model_id AS model_id,comment.title AS title,comment.username AS username,comment.email AS email,comment.ip AS ip,comment.agent AS agent,comment.post_time AS post_time,comment.content AS content,comment.status AS status,comment.pid AS pid,comment.user_id AS user_id,model.name AS model_name,model.table_name AS table_name,member.face AS face,member.nickname AS nickname FROM xyh_comment comment LEFT JOIN xyh_model model ON comment.model_id = model.id LEFT JOIN xyh_member member ON comment.user_id = member.id WHERE comment.pid = 0 AND comment.post_id = 1 AND comment.model_id = 1 AND comment.status = 1 ORDER BY comment.id DESC LIMIT 0,5   [ RunTime:0.0008s ]
+
+[ 2019-12-17T18:06:39+08:00 ] 192.168.2.107 /index.php?s=/Public/loginChk.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+
