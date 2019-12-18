@@ -26,9 +26,9 @@
 	<script type="text/javascript" src="/Data/static/jq_plugins/layer/layer.js"></script>
 	<script language="JavaScript">
 	    <!--
-	    var URL = '/xyhai.php?s=/Abc';
+	    var URL = '/xyhai.php?s=/Tag';
 	    var APP	 = '/xyhai.php?s=';
-	    var SELF='/xyhai.php?s=/Abc/detail/aid/1';
+	    var SELF='/xyhai.php?s=/Tag/index';
 	    var PUBLIC='/App/Manage/View/Public';
 	    var data_path = "/Data";
 		var tpl_public = "/App/Manage/View/Public";
@@ -37,6 +37,8 @@
 	<script type="text/javascript" src="/App/Manage/View/Public/js/common.js?20191001"></script> 
 	<!-- 头部js文件|自定义 -->
 	
+ 
+
 </head>
 <body>
 	<div class="xyh-content">
@@ -53,11 +55,17 @@
     <div class="row margin-botton">
         <div class="col-sm-6 column">
             <div class="btn-group btn-group-md">
-                <button class="btn btn-default" type="button" onclick="goUrl('<?php echo U('index');?>')"><em class="glyphicon glyphicon-chevron-left"></em> 返回</button>
-                <button class="btn btn-primary" type="button" onclick="goUrl('<?php echo U('addDetail', array('aid' => $cate['id']));?>')"><em class="glyphicon glyphicon-plus-sign"></em> 添加广告</button>
-                <button class="btn btn-default" type="button" onclick="doGoSubmit('<?php echo U('sort', array('aid' => $cate['id']));?>','form_do')"><em class="glyphicon glyphicon-th-list"></em> 更新排序</button>
-
+               <button class="btn btn-default" type="button" onclick="doGoSubmit('<?php echo U('sort');?>','form_do')"><em class="glyphicon glyphicon-th-list"></em> 更新排序</button>
             </div>
+        </div>
+        <div class="col-sm-6 text-right">
+            <?php if(ACTION_NAME == "index"): ?><form class="form-inline" method="post" action="<?php echo U('index');?>">
+                  <div class="form-group">
+                    <label class="sr-only" for="inputKeyword">关键字</label>
+                    <input type="text" class="form-control" name="keyword" id="inputKeyword" placeholder="关键字" value="<?php echo ($keyword); ?>">
+                  </div>
+                  <button type="submit" class="btn btn-default">搜索</button>
+                </form><?php endif; ?>
         </div>
     </div>
 
@@ -69,28 +77,27 @@
                         <thead>
                             <tr class="active">
                                 <th>编号</th>
-                                <th>广告标题</th>
-                                <th>开始时间</th>
-                                <th>结束时间</th>
+                                <th>名称</th>
+                                <th>文档数</th>
+                                <th>点击数</th>
                                 <th>排序</th>
-                                <th>状态</th>
+                                <th>添加时间</th>
                                 <th class="text-right">操作</th>
                             </tr>
                         </thead>
                         <tbody>
                         <?php if(is_array($vlist)): foreach($vlist as $key=>$v): ?><tr>
                             <td><?php echo ($v["id"]); ?></td>
-                            <td><?php echo ($v["title"]); ?></td>
-                            <td><?php echo ($v["start_time"]); ?></td>   
-                            <td><?php echo ($v["end_time"]); ?></td>              
-                            <td><input type="text" name="sortlist[<?php echo ($v["id"]); ?>]" value="<?php echo ($v["sort"]); ?>" id="sortlist" size="5" class="xyh-form-control"></td>            
-                            <td>
-                                <?php if(empty($v['status'])): ?><strong class="text-muted"><i>停用</i></strong><?php else: ?><strong class="text-success">启用</strong><?php endif; ?>
+                            <td><a href="<?php echo go_link(C('DEFAULT_MODULE') . '/Tag/shows?tname=' . $v['tag_name'], 1);?>" target="_blank"><?php echo ($v["tag_name"]); ?></a></td>
+                                          
+                            <td><?php echo ($v["num"]); ?></td>
+                            <td><?php echo ($v["hit"]); ?></td>
+                            <td><input type="text" name="sortlist[<?php echo ($v["id"]); ?>]" value="<?php echo ($v["sort"]); ?>" id="sortlist" size="5" class="xyh-form-control">
                             </td>
-
-                            <td class="text-right">
-                                <a href="<?php echo U('editDetail',array('id' => $v['id']), '');?>" class="label label-success">编辑</a>
-                                <a href="javascript:;" onclick="toConfirm('<?php echo U('Abc/delDetail',array('id' => $v['id'], 'aid' => $v['aid']), '');?>', '确实要删除吗？')" class="label label-danger">删除</a>
+                            <td><?php echo ($v["add_time"]); ?></td>
+                            <td class="text-right">         
+                                <a href="<?php echo U('repair',array('id' => $v['id']), '');?>" class="label label-info">修复</a>
+                                <a href="javascript:;" onclick="toConfirm('<?php echo U('del',array('id' => $v['id']), '');?>', '确实要删除吗？')" class="label label-danger">删除</a>   
                     
                             </td>
                         </tr><?php endforeach; endif; ?>

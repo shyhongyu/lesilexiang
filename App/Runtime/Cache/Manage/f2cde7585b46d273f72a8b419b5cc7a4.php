@@ -28,7 +28,7 @@
 	    <!--
 	    var URL = '/xyhai.php?s=/Article';
 	    var APP	 = '/xyhai.php?s=';
-	    var SELF='/xyhai.php?s=/Article/edit/id/1/pid/1';
+	    var SELF='/xyhai.php?s=/Article/edit/id/13/pid/23';
 	    var PUBLIC='/App/Manage/View/Public';
 	    var data_path = "/Data";
 		var tpl_public = "/App/Manage/View/Public";

@@ -26,9 +26,9 @@
 	<script type="text/javascript" src="/Data/static/jq_plugins/layer/layer.js"></script>
 	<script language="JavaScript">
 	    <!--
-	    var URL = '/xyhai.php?s=/Article';
+	    var URL = '/xyhai.php?s=/Special';
 	    var APP	 = '/xyhai.php?s=';
-	    var SELF='/xyhai.php?s=/Article/index/pid/23';
+	    var SELF='/xyhai.php?s=/Special/index';
 	    var PUBLIC='/App/Manage/View/Public';
 	    var data_path = "/Data";
 		var tpl_public = "/App/Manage/View/Public";
@@ -44,22 +44,8 @@
     <div class="row">
         <div class="col-lg-12">
             <h3 class="page-header"><em class="glyphicon glyphicon-cloud-upload"></em> 
-            <?php echo ($type); ?> 
-            <span class="xyh-pos">
-                <i class="glyphicon glyphicon-log-out"></i>
-                <?php if(ACTION_NAME == "index"): if(is_array($poscate)): foreach($poscate as $key=>$v): ?><a href="<?php echo U('' . ucfirst($v['table_name']) .'/index', array('pid' => $v['id']));?>"><?php echo ($v["name"]); ?> </a> <em class="glyphicon glyphicon-menu-right"></em><?php endforeach; endif; endif; ?>
-            </span>         
+            <?php echo ($type); ?>         
             </h3>
-            
-
-            <?php if($subcate): ?><nav class="navbar navbar-default">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <span class="navbar-text">子栏目：</span>
-                        <?php if(is_array($subcate)): foreach($subcate as $key=>$v): ?><a href="<?php echo U(''. ucfirst($v['table_name']) . '/index', array('pid' => $v['id']));?>" class="btn btn-sm btn-default navbar-btn"><?php echo ($v["name"]); if(!empty($v['child'])): ?>&there4;<?php endif; ?></a><?php endforeach; endif; ?>
-                    </div>
-                </div>
-            </nav><?php endif; ?>
         </div>
         
     </div>
@@ -67,15 +53,13 @@
     <div class="row margin-botton">
         <div class="col-sm-6 column">
             <div class="btn-group btn-group-md">
-            <?php if(ACTION_NAME == "index"): ?><button class="btn btn-primary" type="button" onclick="goUrl('<?php echo U('add', array('pid'=>$pid));?>')"><em class="glyphicon glyphicon-plus-sign"></em> 添加文章</button>
-                 <button class="btn btn-default" type="button" onclick="doGoBatch('<?php echo U('audit', array('pid' => $pid));?>', <?php echo C('URL_MODEL');?>, '<?php echo C('URL_PATHINFO_DEPR');?>')"><em class="glyphicon glyphicon-th-list"></em> 审核</button>                 
-                 <button class="btn btn-default" type="button" onclick="toGetSubmit('<?php echo U('move', array('pid' => $pid));?>', <?php echo C('URL_MODEL');?>, '<?php echo C('URL_PATHINFO_DEPR');?>')"><em class="glyphicon glyphicon-th-list"></em> 移动</button>                 
-                 <button class="btn btn-default" type="button" onclick="doConfirmBatch('<?php echo U('del', array('batchFlag' => 1,'pid' => $pid));?>', '确实要删除选择项吗？')"><em class="glyphicon glyphicon-remove-circle"></em> 删除</button>                 
-                 <button class="btn btn-default" type="button" onclick="goUrl('<?php echo U('trach', array('pid' => $pid));?>')"><em class="glyphicon glyphicon-trash"></em> 回收站</button>
+            <?php if(ACTION_NAME == "index"): ?><button class="btn btn-primary" type="button" onclick="goUrl('<?php echo U('add');?>')"><em class="glyphicon glyphicon-plus-sign"></em> 添加专题</button>                 
+                 <button class="btn btn-default" type="button" onclick="doConfirmBatch('<?php echo U('del', array('batchFlag' => 1));?>', '确实要删除选择项吗？')"><em class="glyphicon glyphicon-remove-circle"></em> 删除</button>                 
+                 <button class="btn btn-default" type="button" onclick="goUrl('<?php echo U('trach');?>')"><em class="glyphicon glyphicon-trash"></em> 回收站</button>
             <?php else: ?>
-                <button class="btn btn-primary" type="button" onclick="goUrl('<?php echo U('index', array('pid'=>$pid));?>')"><em class="glyphicon glyphicon-chevron-left"></em> 返回</button>
-                 <button class="btn btn-default" type="button" onclick="doGoBatch('<?php echo U('restore', array('batchFlag' => 1, 'pid' => $pid));?>')"><em class="glyphicon glyphicon-retweet"></em> 还原</button>                 
-                 <button class="btn btn-default" type="button" onclick="doConfirmBatch('<?php echo U('clear', array('batchFlag' => 1, 'pid' => $pid));?>', '确实要彻底删除选择项吗？')"><em class="glyphicon glyphicon-remove-circle"></em> 彻底删除</button><?php endif; ?>
+                <button class="btn btn-primary" type="button" onclick="goUrl('<?php echo U('index');?>')"><em class="glyphicon glyphicon-chevron-left"></em> 返回</button>
+                 <button class="btn btn-default" type="button" onclick="doGoBatch('<?php echo U('restore', array('batchFlag' => 1));?>')"><em class="glyphicon glyphicon-retweet"></em> 还原</button>                 
+                 <button class="btn btn-default" type="button" onclick="doConfirmBatch('<?php echo U('clear', array('batchFlag' => 1));?>', '确实要彻底删除选择项吗？')"><em class="glyphicon glyphicon-remove-circle"></em> 彻底删除</button><?php endif; ?>
 
             </div>
         </div>
@@ -85,7 +69,6 @@
                     <label class="sr-only" for="inputKeyword">关键字</label>
                     <input type="text" class="form-control" name="keyword" id="inputKeyword" placeholder="关键字" value="<?php echo ($keyword); ?>">
                   </div>
-                  <input type="hidden" name="pid" value="<?php echo ($pid); ?>">
                   <button type="submit" class="btn btn-default">搜索</button>
                 </form><?php endif; ?>
         </div>
@@ -103,9 +86,8 @@
                                 <th>标题</th>
                                 <th>分类</th>
                                 <th>权重</th>
-                                <th>点击数</th>
-                                <th>发布时间</th>
-                                <th>审核状态</th>
+                                <th>点击</th>
+                                <th>更新时间</th>
                                 <th class="text-right">操作</th>
                             </tr>
                         </thead>
@@ -117,15 +99,14 @@
                             <td><?php echo ($v["cate_name"]); ?></td>
                             <td><?php echo ($v["point"]); ?></td>
                             <td><?php echo ($v["click"]); ?></td>
-                            <td><?php echo ($v["publish_time"]); ?></td>
-                            <td><?php if(!empty($v['audit_status'])): ?><strong class="text-success">已审核</strong><?php else: ?><strong class="text-muted"><i>未审核</i></strong><?php endif; ?></td>
+                            <td><?php echo ($v["update_time"]); ?></td>
                             <td class="text-right">
-                            <?php if(ACTION_NAME == "index"): ?><!-- <a href="<?php echo (view_url($v)); ?>" target="_blank" class="label label-info">查看</a> -->
-                            <a href="<?php echo U('edit',array('id' => $v['id'],'pid' => $pid), '');?>" class="label label-success">编辑</a>
-                            <a href="javascript:;" onclick="toConfirm('<?php echo U('del',array('id' => $v['id'], 'pid' => $pid), '');?>', '确实要删除吗？')" class="label label-danger">删除</a>
+                            <?php if(ACTION_NAME == "index"): ?><a href="<?php echo (view_url($v,'Special/shows')); ?>" target="_blank" class="label label-info">查看</a>
+                            <a href="<?php echo U('edit',array('id' => $v['id']), '');?>" class="label label-success">编辑</a>
+                            <a href="javascript:;" onclick="toConfirm('<?php echo U('del',array('id' => $v['id']), '');?>', '确实要彻底删除吗？')" class="label label-danger">删除</a>
                             <?php else: ?>
-                            <a href="<?php echo U('restore',array('id' => $v['id'], 'pid' => $pid), '');?>" class="label label-info">还原</a>
-                            <a href="javascript:;" onclick="toConfirm('<?php echo U('clear',array('id' => $v['id'], 'pid' => $pid), '');?>', '确实要彻底删除吗？')" class="label label-danger">彻底删除</a><?php endif; ?>
+                            <a href="<?php echo U('restore',array('id' => $v['id']), '');?>" class="label label-info">还原</a>
+                            <a href="javascript:;" onclick="toConfirm('<?php echo U('clear',array('id' => $v['id']), '');?>', '确实要彻底删除吗？')" class="label label-danger">彻底删除</a><?php endif; ?>
                             </td>
                         </tr><?php endforeach; endif; ?>
                         </tbody>
@@ -144,7 +125,6 @@
             
         </div>
     </div>
-
     
 			
 	</div>	

@@ -5,21 +5,34 @@ use Think\Controller;
 
 class ShowController extends Controller {
 	/**
-	 * 列表页
+	 * 列表
 	 *
 	 * @return void
 	 */	
 	public function index() {
 		$id = I('id', 0, 'intval'); 
-		$where = ['c.id'=>$id,'status'=>1];
+		$where = ['c.id'=>$id,'b.delete_status '=>0];
 		$list = M('SearchAll')
 				 ->alias('a')
 				 ->field('a.arc_id,c.name as cate_name,c.seo_title,a.title,b.description,b.content,a.litpic,b.publish_time,a.cid')
 				 ->join('INNER JOIN __CATEGORY__ c ON c.id = a.cid')
 				 ->join('INNER JOIN __ARTICLE__ b ON b.id = a.arc_id')
 				 ->where($where)
+				 ->order('b.pubLish_time DESC')
 				 ->select();	
 		echo json_encode(['state'=>200,'msg'=>'请求成功','data'=>$list]);	
+	}
+
+
+	 /**
+	 * 导航
+	 *
+	 * @return void
+	 */
+	public function nav() {
+		$cid   = I('id', 0, 'intval');
+		$cate = D('CategoryView')->field('id,name,seo_title,cat_pic,content')->where('pid = '.$cid)->order('category.sort,category.id')->select();
+		echo json_encode(['state'=>200,'msg'=>'请求成功','data'=>$cate]);
 	}
 	/**
 	 * 首页banner
@@ -28,7 +41,7 @@ class ShowController extends Controller {
 	 */
 	public function banner(){
 		
-		$banner = M('abc_detail')->field('content,url')->select();
+		$banner = M('abc_detail')->field('id,content,url')->where("status = 1")->select();
 		echo json_encode(['state'=>200,'msg'=>'请求成功','data'=>$banner]); 
 	}
 
@@ -81,16 +94,45 @@ class ShowController extends Controller {
 			echo json_encode(['state'=>200,'msg'=>'留言成功','data'=>$res]);
 	}
 	/**
-	 * 新闻动态
+	 * 顶部图片
+	 *
+	 * @return void
 	 */
-	public function NewsList(){
+	public function pic(){
+		$id = I('id',0,'intval');
+		$data = M('category')->field('id,cat_pic')->where("id = $id")->find();
+		echo json_encode(['state'=>200,'msg'=>'请求成功','data'=>$data]);
 
 	}
 	/**
 	 * 搜索展示
 	 */
 	public function search(){
-		
+
 	}
+	/**
+	 * 课程体系
+	 */
+	public function course(){
+		$pid = I('pid',0,'intval');
+		$data = M('category')->order('sort,id')->select();
+		$list = $this->recursion($data,$pid);
+		echo json_encode(['state'=>200,'msg'=>'请求成功','data'=>$list]);
+	}
+
+	public function recursion($arr,$pid=0){
+        $list = [];
+        foreach ($arr as $v){
+            if ($v['pid'] == $pid){
+                    $v['son'] = $this->recursion($arr,$v['id']);
+               		 $list[] = $v;
+           }
+       }
+        return $list;
+	}
+
+
+
+   
 	
 }
