@@ -1,0 +1,814 @@
+[ 2019-12-19T13:58:37+08:00 ] 192.168.2.107 /index.php/api/show/NewList?page=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+
+[ 2019-12-19T13:58:44+08:00 ] 192.168.2.107 /index.php/api/show/NewList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000309s ]
+
+[ 2019-12-19T14:07:37+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.1112s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'delete_status' in where clause is ambiguous
+
+[ 2019-12-19T14:08:14+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.2092s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'delete_status' in where clause is ambiguous
+
+[ 2019-12-19T14:08:39+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0061s ]
+NOTIC: [4096] Object of class Think\Model could not be converted to string D:\phpStudy\PHPTutorial\WWW\lslx\App\Api\Controller\ShowController.class.php 第 151 行.
+
+[ 2019-12-19T14:08:41+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000278s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0935s ]
+NOTIC: [4096] Object of class Think\Model could not be converted to string D:\phpStudy\PHPTutorial\WWW\lslx\App\Api\Controller\ShowController.class.php 第 151 行.
+
+[ 2019-12-19T14:09:26+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.1112s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'delete_status' in where clause is ambiguous
+
+[ 2019-12-19T14:09:47+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0217s ]
+
+[ 2019-12-19T14:25:16+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0167s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'delete_status' in where clause is ambiguous
+
+[ 2019-12-19T14:25:30+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0030s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'delete_status' in where clause is ambiguous
+
+[ 2019-12-19T14:25:31+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0033s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'delete_status' in where clause is ambiguous
+
+[ 2019-12-19T14:31:23+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.1189s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'delete_status' in where clause is ambiguous
+
+[ 2019-12-19T14:31:24+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.1335s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'delete_status' in where clause is ambiguous
+
+[ 2019-12-19T14:36:28+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000301s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0995s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1140 Mixing of GROUP columns (MIN(),MAX(),COUNT(),...) with no GROUP columns is illegal if there is no GROUP BY clause
+
+[ 2019-12-19T14:36:30+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.1362s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1140 Mixing of GROUP columns (MIN(),MAX(),COUNT(),...) with no GROUP columns is illegal if there is no GROUP BY clause
+
+[ 2019-12-19T15:48:53+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0078s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1140 Mixing of GROUP columns (MIN(),MAX(),COUNT(),...) with no GROUP columns is illegal if there is no GROUP BY clause
+
+[ 2019-12-19T15:49:34+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0121s ]
+SQL: SELECT a.arc_id,c.name as cate_name,c.seo_title,a.title,b.description,b.content,a.litpic,b.publish_time,a.cid FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 8 AND b.delete_status = 0 ORDER BY b.pubLish_time DESC  [ RunTime:0.0343s ]
+
+[ 2019-12-19T15:50:05+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0265s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1140 Mixing of GROUP columns (MIN(),MAX(),COUNT(),...) with no GROUP columns is illegal if there is no GROUP BY clause
+
+[ 2019-12-19T15:51:33+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0042s ]
+SQL: SELECT COUNT(*) AS tp_count FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 8 AND b.delete_status = 0 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-12-19T15:52:29+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0028s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'delete_status' in where clause is ambiguous
+
+[ 2019-12-19T15:53:06+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0335s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'delete_status' in where clause is ambiguous
+
+[ 2019-12-19T15:53:22+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000447s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0366s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'delete_status' in where clause is ambiguous
+
+[ 2019-12-19T15:53:23+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0029s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'delete_status' in where clause is ambiguous
+
+[ 2019-12-19T15:53:34+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0475s ]
+SQL: SELECT COUNT(*) AS tp_count FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 8 AND b.delete_status = 0 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2019-12-19T15:53:47+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0889s ]
+SQL: SELECT COUNT(*) AS tp_count FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 8 AND b.delete_status = 0 LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2019-12-19T15:54:10+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 8 AND b.delete_status = 0 LIMIT 1   [ RunTime:0.0003s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'b.pubLish_time' in 'order clause'
+
+[ 2019-12-19T15:55:00+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000301s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 8 AND b.delete_status = 0 LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2019-12-19T15:55:23+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 8 AND b.delete_status = 0 LIMIT 1   [ RunTime:0.0004s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'b.pubLish_time' in 'order clause'
+
+[ 2019-12-19T15:55:33+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 8 AND b.delete_status = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xyh_search_all` LIMIT 5   [ RunTime:0.0002s ]
+
+[ 2019-12-19T15:56:17+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0300s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1140 Mixing of GROUP columns (MIN(),MAX(),COUNT(),...) with no GROUP columns is illegal if there is no GROUP BY clause
+
+[ 2019-12-19T15:56:28+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 8 AND b.delete_status = 0 LIMIT 1   [ RunTime:0.0004s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'b.pubLish_time' in 'order clause'
+
+[ 2019-12-19T15:56:57+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 8 AND b.delete_status = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xyh_search_all` LIMIT 5   [ RunTime:0.0002s ]
+
+[ 2019-12-19T15:57:07+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0728s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1140 Mixing of GROUP columns (MIN(),MAX(),COUNT(),...) with no GROUP columns is illegal if there is no GROUP BY clause
+
+[ 2019-12-19T16:00:51+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0820s ]
+SQL: SELECT COUNT(*) AS tp_count FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 8 AND b.delete_status = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xyh_search_all` LIMIT 5   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000525s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000562s ]
+
+[ 2019-12-19T16:01:28+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0258s ]
+SQL: SELECT COUNT(*) AS tp_count FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 8 AND b.delete_status = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `xyh_search_all` LIMIT 5   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000474s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2019-12-19T16:02:10+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0194s ]
+SQL: SELECT COUNT(*) AS tp_count FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 8 AND b.delete_status = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xyh_search_all` LIMIT 3   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000474s ]
+
+[ 2019-12-19T16:02:54+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0315s ]
+SQL: SELECT COUNT(*) AS tp_count FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 8 AND b.delete_status = 0 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-12-19T16:03:03+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.1075s ]
+SQL: SELECT COUNT(*) AS tp_count FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 8 AND b.delete_status = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xyh_search_all` LIMIT 3   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000766s ]
+
+[ 2019-12-19T16:05:27+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0441s ]
+SQL: SELECT COUNT(*) AS tp_count FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE b.cid = 8 AND b.delete_status = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xyh_search_all` LIMIT 3   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000460s ]
+
+[ 2019-12-19T16:08:11+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0530s ]
+SQL: SELECT COUNT(*) AS tp_count FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE b.cid = 8 AND b.delete_status = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xyh_search_all` LIMIT 3   [ RunTime:0.0002s ]
+
+[ 2019-12-19T16:09:07+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0754s ]
+SQL: SELECT COUNT(*) AS tp_count FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 8 AND b.delete_status = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xyh_search_all` LIMIT 3   [ RunTime:0.0002s ]
+
+[ 2019-12-19T16:09:20+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 8 AND b.delete_status = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xyh_search_all`  [ RunTime:0.0003s ]
+
+[ 2019-12-19T16:09:50+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 8 AND b.delete_status = 0 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-12-19T16:09:55+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 11 AND b.delete_status = 0 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-12-19T16:11:13+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0068s ]
+SQL: SELECT COUNT(*) AS tp_count FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 11 AND b.delete_status = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xyh_search_all` LIMIT 3   [ RunTime:0.0002s ]
+
+[ 2019-12-19T16:13:49+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0222s ]
+SQL: SELECT a.arc_id,c.name as cate_name,c.seo_title,a.title,b.description,b.content,a.litpic,b.publish_time,a.cid FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 11 AND b.delete_status = 0  [ RunTime:0.0004s ]
+
+[ 2019-12-19T16:14:09+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0145s ]
+SQL: SELECT a.arc_id,c.name as cate_name,c.seo_title,a.title,b.description,b.content,a.litpic,b.publish_time,a.cid FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 11 AND b.delete_status = 0  [ RunTime:0.0004s ]
+
+[ 2019-12-19T16:14:29+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0122s ]
+SQL: SELECT a.arc_id,c.name as cate_name,c.seo_title,a.title,b.description,b.content,a.litpic,b.publish_time,a.cid FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 8 AND b.delete_status = 0  [ RunTime:0.0003s ]
+
+[ 2019-12-19T16:15:10+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0059s ]
+SQL: SELECT a.arc_id,c.name as cate_name,c.seo_title,a.title,b.description,b.content,a.litpic,b.publish_time,a.cid FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 8 AND b.delete_status = 0  [ RunTime:0.0004s ]
+
+[ 2019-12-19T16:15:12+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0025s ]
+SQL: SELECT a.arc_id,c.name as cate_name,c.seo_title,a.title,b.description,b.content,a.litpic,b.publish_time,a.cid FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 8 AND b.delete_status = 0  [ RunTime:0.0003s ]
+
+[ 2019-12-19T16:15:12+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0022s ]
+SQL: SELECT a.arc_id,c.name as cate_name,c.seo_title,a.title,b.description,b.content,a.litpic,b.publish_time,a.cid FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 8 AND b.delete_status = 0  [ RunTime:0.0003s ]
+
+[ 2019-12-19T16:15:13+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0025s ]
+SQL: SELECT a.arc_id,c.name as cate_name,c.seo_title,a.title,b.description,b.content,a.litpic,b.publish_time,a.cid FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 8 AND b.delete_status = 0  [ RunTime:0.0003s ]
+
+[ 2019-12-19T16:15:14+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0023s ]
+SQL: SELECT a.arc_id,c.name as cate_name,c.seo_title,a.title,b.description,b.content,a.litpic,b.publish_time,a.cid FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 8 AND b.delete_status = 0  [ RunTime:0.0003s ]
+
+[ 2019-12-19T16:15:31+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0026s ]
+SQL: SELECT a.arc_id,c.name as cate_name,c.seo_title,a.title,b.description,b.content,a.litpic,b.publish_time,a.cid FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 8 AND b.delete_status = 0 LIMIT 3   [ RunTime:0.0003s ]
+
+[ 2019-12-19T16:15:49+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 8 AND b.delete_status = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xyh_search_all` LIMIT 3   [ RunTime:0.0004s ]
+
+[ 2019-12-19T16:16:26+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0060s ]
+SQL: SELECT a.arc_id,c.name as cate_name,c.seo_title,a.title,b.description,b.content,a.litpic,b.publish_time,a.cid FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 8 AND b.delete_status = 0 LIMIT 3   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xyh_search_all` LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-12-19T16:17:43+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0153s ]
+SQL: SHOW COLUMNS FROM `xyh_category` [ RunTime:0.0023s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'c.id' in 'where clause'
+
+[ 2019-12-19T16:18:43+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0140s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'c.id' in 'where clause'
+
+[ 2019-12-19T16:18:43+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0024s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'c.id' in 'where clause'
+
+[ 2019-12-19T16:20:54+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000537s ]
+SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0165s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xyh_article` WHERE `cid` = 8 AND `delete_status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0021s ]
+SQL: SELECT a.arc_id,c.name as cate_name,c.seo_title,a.title,b.description,b.content,a.litpic,b.publish_time,a.cid FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 8 AND b.delete_status = 0 LIMIT 3   [ RunTime:0.0003s ]
+
+[ 2019-12-19T16:21:00+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xyh_article` WHERE `cid` = 8 AND `delete_status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0022s ]
+SQL: SELECT a.arc_id,c.name as cate_name,c.seo_title,a.title,b.description,b.content,a.litpic,b.publish_time,a.cid FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 8 AND b.delete_status = 0 LIMIT 3   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000669s ]
+
+[ 2019-12-19T16:21:20+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000304s ]
+SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xyh_article` WHERE `cid` = 11 AND `delete_status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0023s ]
+SQL: SELECT a.arc_id,c.name as cate_name,c.seo_title,a.title,b.description,b.content,a.litpic,b.publish_time,a.cid FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 11 AND b.delete_status = 0 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000506s ]
+
+[ 2019-12-19T16:21:37+08:00 ] 192.168.2.107 /index.php/api/show/NewList?page=2&id=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xyh_article` WHERE `cid` = 11 AND `delete_status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0022s ]
+SQL: SELECT a.arc_id,c.name as cate_name,c.seo_title,a.title,b.description,b.content,a.litpic,b.publish_time,a.cid FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 11 AND b.delete_status = 0 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000456s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000480s ]
+
+[ 2019-12-19T16:21:49+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xyh_article` WHERE `cid` = 11 AND `delete_status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0027s ]
+SQL: SELECT a.arc_id,c.name as cate_name,c.seo_title,a.title,b.description,b.content,a.litpic,b.publish_time,a.cid FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 11 AND b.delete_status = 0 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000564s ]
+
+[ 2019-12-19T16:25:49+08:00 ] 192.168.2.107 /index.php/api/show/NewList?id=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0244s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xyh_article` WHERE `cid` = 11 AND `delete_status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Division by zero D:\phpStudy\PHPTutorial\WWW\lslx\App\Api\Controller\ShowController.class.php 第 147 行.
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0027s ]
+SQL: SELECT a.arc_id,c.name as cate_name,c.seo_title,a.title,b.description,b.content,a.litpic,b.publish_time,a.cid FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 11 AND b.delete_status = 0 LIMIT 0,3   [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000620s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000664s ]
+
+[ 2019-12-19T16:27:02+08:00 ] 192.168.2.107 /index.php/api/show/NewList?page=2&id=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0162s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xyh_article` WHERE `cid` = 11 AND `delete_status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0029s ]
+SQL: SELECT a.arc_id,c.name as cate_name,c.seo_title,a.title,b.description,b.content,a.litpic,b.publish_time,a.cid FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 11 AND b.delete_status = 0 LIMIT 3,3   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000398s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000422s ]
+
+[ 2019-12-19T16:27:52+08:00 ] 192.168.2.107 /index.php/api/show/NewList?page=1&id=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xyh_article` WHERE `cid` = 11 AND `delete_status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Division by zero D:\phpStudy\PHPTutorial\WWW\lslx\App\Api\Controller\ShowController.class.php 第 147 行.
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0026s ]
+SQL: SELECT a.arc_id,c.name as cate_name,c.seo_title,a.title,b.description,b.content,a.litpic,b.publish_time,a.cid FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 11 AND b.delete_status = 0 LIMIT 0,3   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000480s ]
+
+[ 2019-12-19T16:30:04+08:00 ] 192.168.2.107 /index.php/api/show/NewList?page=1&id=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000348s ]
+SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0206s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xyh_article` WHERE `cid` = 11 AND `delete_status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0340s ]
+SQL: SELECT a.arc_id,c.name as cate_name,c.seo_title,a.title,b.description,b.content,a.litpic,b.publish_time,a.cid FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 11 AND b.delete_status = 0 LIMIT 0,3   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: size D:\phpStudy\PHPTutorial\WWW\lslx\App\Api\Controller\ShowController.class.php 第 159 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000583s ]
+
+[ 2019-12-19T16:30:17+08:00 ] 192.168.2.107 /index.php/api/show/NewList?page=1&id=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0102s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xyh_article` WHERE `cid` = 11 AND `delete_status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0991s ]
+SQL: SELECT a.arc_id,c.name as cate_name,c.seo_title,a.title,b.description,b.content,a.litpic,b.publish_time,a.cid FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 11 AND b.delete_status = 0 LIMIT 0,1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: size D:\phpStudy\PHPTutorial\WWW\lslx\App\Api\Controller\ShowController.class.php 第 159 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000415s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000433s ]
+
+[ 2019-12-19T16:30:26+08:00 ] 192.168.2.107 /index.php/api/show/NewList?page=2&id=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0276s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xyh_article` WHERE `cid` = 11 AND `delete_status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0561s ]
+SQL: SELECT a.arc_id,c.name as cate_name,c.seo_title,a.title,b.description,b.content,a.litpic,b.publish_time,a.cid FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 11 AND b.delete_status = 0 LIMIT 1,1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: size D:\phpStudy\PHPTutorial\WWW\lslx\App\Api\Controller\ShowController.class.php 第 159 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000604s ]
+
+[ 2019-12-19T16:34:45+08:00 ] 192.168.2.107 /index.php/api/show/NewList?page=2&id=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0287s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xyh_article` WHERE `cid` = 11 AND `delete_status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0463s ]
+SQL: SELECT a.arc_id,c.name as cate_name,c.seo_title,a.title,b.description,b.content,a.litpic,b.publish_time,a.cid FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 11 AND b.delete_status = 0 LIMIT 3,3   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000493s ]
+
+[ 2019-12-19T16:35:11+08:00 ] 192.168.2.107 /index.php/api/show/NewList?page=2&id=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0901s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xyh_article` WHERE `cid` = 11 AND `delete_status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0747s ]
+SQL: SELECT a.arc_id,c.name as cate_name,c.seo_title,a.title,b.description,b.content,a.litpic,b.publish_time,a.cid FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 11 AND b.delete_status = 0 LIMIT 1,1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000418s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000443s ]
+

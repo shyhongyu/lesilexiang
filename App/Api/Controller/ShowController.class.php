@@ -91,7 +91,7 @@ class ShowController extends Controller {
 				'type'=>$type
 				);
 	    	$res  = M('guestbook')->add($data);
-			echo json_encode(['state'=>200,'msg'=>'留言成功','data'=>$res]);
+			echo json_encode(['state'=>200,'msg'=>'添加成功','data'=>$res]);
 	}
 	/**
 	 * 顶部图片
@@ -102,12 +102,6 @@ class ShowController extends Controller {
 		$id = I('id',0,'intval');
 		$data = M('category')->field('id,cat_pic')->where("id = $id")->find();
 		echo json_encode(['state'=>200,'msg'=>'请求成功','data'=>$data]);
-
-	}
-	/**
-	 * 搜索展示
-	 */
-	public function search(){
 
 	}
 	/**
@@ -132,7 +126,33 @@ class ShowController extends Controller {
 	}
 
 
+	/***
+	 * 新闻列表分页
+	 * 
+	 */
 
-   
+	 public function NewList(){
+		 $id = I('id',0,'intval');
+		 //总记录数
+		 $total = M('article')->where(['cid'=>$id,'delete_status'=>0])->count();
+		 $page =I('page',0,'intval')?I('page',0,'intval'):1;//当前页
+		 //每页显示条数
+		 $page_size = 1;
+		//设置显示的页数
+		 $limit = ($page - 1) * $page_size . ',' . $page_size;
+		 $where = ['c.id'=>$id,'b.delete_status'=>0];
+		 //总页数
+		 $page_num = ceil($total/$page_size);
+		 $list = M('SearchAll')
+			->alias('a')
+			->field('a.arc_id,c.name as cate_name,c.seo_title,a.title,b.description,b.content,a.litpic,b.publish_time,a.cid')
+			->join('INNER JOIN __CATEGORY__ c ON c.id = a.cid')
+			->join('INNER JOIN __ARTICLE__ b ON b.id = a.arc_id')	
+			->where($where)
+			->limit($limit)
+			->select();	
+		 echo json_encode(['state'=>200,'msg'=>'请求成功','total'=>$total,'size'=>$page_size,'page_num'=>$page_num,'page'=>$page,'data'=>$list]);
+ 
+	 }  
 	
 }
