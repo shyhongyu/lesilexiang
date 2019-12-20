@@ -6,10 +6,10 @@
 <title><?php echo C('CFG_WEBTITLE');?></title>
 <meta name="keywords" content="<?php echo C('CFG_KEYWORDS');?>" />
 <meta name="description" content="<?php echo C('CFG_DESCRIPTION');?>" />
-<script type="text/javascript" src="/lslx/Data/static/js/jquery-1.12.4.min.js" ></script>
-<link rel="stylesheet" href="/lslx/Public/Home/default/js/FlexSlider/flexslider.css" type="text/css" />
-<link href="/lslx/Public/Home/default/css/css.css?2017" rel="stylesheet" type="text/css" />
-<script language="javascript" type="text/javascript" src="/lslx/Public/Home/default/js/FlexSlider/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="/Data/static/js/jquery-1.12.4.min.js" ></script>
+<link rel="stylesheet" href="/Public/Home/default/js/FlexSlider/flexslider.css" type="text/css" />
+<link href="/Public/Home/default/css/css.css?2017" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/Public/Home/default/js/FlexSlider/jquery.flexslider-min.js"></script>
 <script language="javascript" type="text/javascript">
 	$(function(){
 		$('.flexslider').flexslider({animation: "slide",itemMargin: 0,controlNav: false});
@@ -25,7 +25,7 @@
 	})
 </script>
 <?php
- $_flag = 0; switch ($_flag) { case 0: if (C('CFG_MOBILE_AUTO') == 1) { if (C('HTML_CACHE_ON') == true) { echo '<script type="text/javascript" src="/lslx/Data/static/js/mobile_auto.js"></script>'; } else { go_mobile(); } } break; case 1: go_mobile(); break; case 2: if (C('CFG_MOBILE_AUTO') == 1) { echo '<script type="text/javascript" src="/lslx/Data/static/js/mobile_auto.js"></script>'; } break; default: break; } ?>
+ $_flag = 0; switch ($_flag) { case 0: if (C('CFG_MOBILE_AUTO') == 1) { if (C('HTML_CACHE_ON') == true) { echo '<script type="text/javascript" src="/Data/static/js/mobile_auto.js"></script>'; } else { go_mobile(); } } break; case 1: go_mobile(); break; case 2: if (C('CFG_MOBILE_AUTO') == 1) { echo '<script type="text/javascript" src="/Data/static/js/mobile_auto.js"></script>'; } break; default: break; } ?>
 </head>
 <body>
 	
@@ -102,7 +102,7 @@ $(function(){
 	<div class="mt">
 		<h3 class="left_bt">搜索中心</h3>
 		<div class="xbox left_box">
-		<form id="SearchForm" name="SearchForm" method="post" action="/lslx/index.php?s=/Search/index.html		
+		<form id="SearchForm" name="SearchForm" method="post" action="/index.php?s=/Search/index.html		
 		">
 		<ul class="searchFormDiv">
 			<li>
@@ -188,7 +188,7 @@ $(function(){
 <div class="clear"></div>
 </div>
 </div>
-<script language="javascript" src="/lslx/Public/Home/default/js/MSClass.js"></script>
+<script language="javascript" src="/Public/Home/default/js/MSClass.js"></script>
 <script type="text/javascript">
 new Marquee(["my2Box","my2Contnet"],2,1,966,140,30,0,0);
 </script>

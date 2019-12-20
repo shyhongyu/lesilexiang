@@ -69,11 +69,12 @@ class ShowController extends Controller {
 				->where($next)
 				->order('id asc')
 				->limit('1')->find();
- 		echo json_encode(['state'=>200,'msg'=>'请求成功','data'=>$data,'front'=>$front,'after'=>$after]); 	}
+		 echo json_encode(['state'=>200,'msg'=>'请求成功','data'=>$data,'front'=>$front,'after'=>$after]); 	
+	}
 	/**
 	 * 添加
 	 */
-	public function OnlineStudy(){
+	public function addData(){
 			$type = I('type', 0, 'intval');
 			$tel = I('tel','', 'htmlspecialchars,rtrim');
 			$username = I('username','', 'htmlspecialchars,rtrim');
@@ -98,7 +99,7 @@ class ShowController extends Controller {
 	 *
 	 * @return void
 	 */
-	public function pic(){
+	public function TopPic(){
 		$id = I('id',0,'intval');
 		$data = M('category')->field('id,cat_pic')->where("id = $id")->find();
 		echo json_encode(['state'=>200,'msg'=>'请求成功','data'=>$data]);

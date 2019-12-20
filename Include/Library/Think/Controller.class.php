@@ -330,6 +330,22 @@ abstract class Controller {
 		// 执行后续操作
 		Hook::listen('action_end');
 	}
+
+	/**
+	 * 解决跨域
+	 *
+	 * @return void
+	 */
+	protected function _initialize(){
+		$this -> cross();
+	}
+
+	public function cross(){
+        header('Content-Type:application/json; charset=utf-8');
+        header('Access-Control-Allow-Origin:*'); 
+        //header('Access-Control-Max-Age:86400'); 
+        header('Access-Control-Allow-Methods:OPTIONS,POST,PUT,DELETE');
+	}
 }
 // 设置控制器别名 便于升级
 class_alias('Think\Controller', 'Think\Action');

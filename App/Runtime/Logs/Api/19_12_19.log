@@ -812,3 +812,29 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000418s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000443s ]
 
+[ 2019-12-19T17:01:25+08:00 ] 192.168.2.107 /index.php/api/show/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.1284s ]
+SQL: SELECT a.arc_id,c.name as cate_name,c.seo_title,a.title,b.description,b.content,a.litpic,b.publish_time,a.cid FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 0 AND b.delete_status = 0 ORDER BY b.pubLish_time DESC  [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000478s ]
+
+[ 2019-12-19T17:01:49+08:00 ] 192.168.2.107 /index.php/api/show/index?id=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+SQL: SHOW COLUMNS FROM `xyh_search_all` [ RunTime:0.0937s ]
+SQL: SELECT a.arc_id,c.name as cate_name,c.seo_title,a.title,b.description,b.content,a.litpic,b.publish_time,a.cid FROM xyh_search_all a INNER JOIN xyh_category c ON c.id = a.cid INNER JOIN xyh_article b ON b.id = a.arc_id  WHERE c.id = 11 AND b.delete_status = 0 ORDER BY b.pubLish_time DESC  [ RunTime:0.0438s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000458s ]
+

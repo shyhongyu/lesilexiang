@@ -1,0 +1,58 @@
+[ 2019-12-20T17:24:24+08:00 ] 192.168.2.103 /index.php?s=/Mobile/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+SQL: SHOW COLUMNS FROM `xyh_product` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `xyh_category` [ RunTime:0.0025s ]
+SQL: SELECT product.id AS id,product.title AS title,product.color AS color,product.keywords AS keywords,product.litpic AS litpic,product.description AS description,product.publish_time AS publish_time,product.update_time AS update_time,product.price AS price,product.market_price AS market_price,product.brand AS brand,product.units AS units,product.specification AS specification,product.click AS click,product.cid AS cid,product.point AS point,product.comment_flag AS comment_flag,product.flag AS flag,product.jump_url AS jump_url,product.delete_status AS delete_status,product.audit_status AS audit_status,product.user_id AS user_id,product.aid AS aid,category.name AS cate_name,category.ename AS ename,category.model_id AS model_id,category.status AS cate_status FROM xyh_product product LEFT JOIN xyh_category category ON product.cid = category.id WHERE product.delete_status = 0 AND product.audit_status = 1 AND category.status < 2 ORDER BY product.id ASC LIMIT 3   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0026s ]
+SQL: SELECT article.id AS id,article.title AS title,article.short_title AS short_title,article.color AS color,article.copyfrom AS copyfrom,article.author AS author,article.keywords AS keywords,article.litpic AS litpic,article.description AS description,article.publish_time AS publish_time,article.update_time AS update_time,article.click AS click,article.cid AS cid,article.point AS point,article.comment_flag AS comment_flag,article.flag AS flag,article.jump_url AS jump_url,article.delete_status AS delete_status,article.audit_status AS audit_status,article.user_id AS user_id,article.aid AS aid,category.name AS cate_name,category.ename AS ename,category.model_id AS model_id,category.status AS cate_status FROM xyh_article article LEFT JOIN xyh_category category ON article.cid = category.id WHERE article.delete_status = 0 AND article.audit_status = 1 AND category.status < 2 ORDER BY article.point DESC,article.id DESC LIMIT 6   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `xyh_tag` [ RunTime:0.0030s ]
+SQL: SELECT DISTINCT  t.tag_name,t.id,t.num,t.hit FROM xyh_tag t INNER JOIN xyh_tag_index ti ON ti.tag_id = t.id  ORDER BY sort ASC,id DESC LIMIT 10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xyh_link` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `xyh_link` WHERE `id` > 0 ORDER BY sort ASC LIMIT 20   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085132s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085169s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000365s ]
+
+[ 2019-12-20T17:26:12+08:00 ] 192.168.2.103 /index.php?s=/Mobile/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+SQL: SHOW COLUMNS FROM `xyh_product` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `xyh_category` [ RunTime:0.0022s ]
+SQL: SELECT product.id AS id,product.title AS title,product.color AS color,product.keywords AS keywords,product.litpic AS litpic,product.description AS description,product.publish_time AS publish_time,product.update_time AS update_time,product.price AS price,product.market_price AS market_price,product.brand AS brand,product.units AS units,product.specification AS specification,product.click AS click,product.cid AS cid,product.point AS point,product.comment_flag AS comment_flag,product.flag AS flag,product.jump_url AS jump_url,product.delete_status AS delete_status,product.audit_status AS audit_status,product.user_id AS user_id,product.aid AS aid,category.name AS cate_name,category.ename AS ename,category.model_id AS model_id,category.status AS cate_status FROM xyh_product product LEFT JOIN xyh_category category ON product.cid = category.id WHERE product.delete_status = 0 AND product.audit_status = 1 AND category.status < 2 ORDER BY product.id ASC LIMIT 3   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0027s ]
+SQL: SELECT article.id AS id,article.title AS title,article.short_title AS short_title,article.color AS color,article.copyfrom AS copyfrom,article.author AS author,article.keywords AS keywords,article.litpic AS litpic,article.description AS description,article.publish_time AS publish_time,article.update_time AS update_time,article.click AS click,article.cid AS cid,article.point AS point,article.comment_flag AS comment_flag,article.flag AS flag,article.jump_url AS jump_url,article.delete_status AS delete_status,article.audit_status AS audit_status,article.user_id AS user_id,article.aid AS aid,category.name AS cate_name,category.ename AS ename,category.model_id AS model_id,category.status AS cate_status FROM xyh_article article LEFT JOIN xyh_category category ON article.cid = category.id WHERE article.delete_status = 0 AND article.audit_status = 1 AND category.status < 2 ORDER BY article.point DESC,article.id DESC LIMIT 6   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `xyh_tag` [ RunTime:0.0032s ]
+SQL: SELECT DISTINCT  t.tag_name,t.id,t.num,t.hit FROM xyh_tag t INNER JOIN xyh_tag_index ti ON ti.tag_id = t.id  ORDER BY sort ASC,id DESC LIMIT 10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xyh_link` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `xyh_link` WHERE `id` > 0 ORDER BY sort ASC LIMIT 20   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034967s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034985s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000316s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000337s ]
+
