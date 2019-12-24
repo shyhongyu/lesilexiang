@@ -49,9 +49,9 @@
                                 <td class="text-right">
 
                                 <a href="{:U('Category/add',array('pid' => $v['id']))}" class="label label-primary">添加子栏目</a>
-                                <a href="{:U(''.ucfirst($v['table_name']). '/index', array('pid' => $v['id']))}" class="label label-info">列表</a>
+                                <!-- <a href="{:U(''.ucfirst($v['table_name']). '/index', array('pid' => $v['id']))}" class="label label-info">列表</a> -->
                                 <a href="{:U('Category/edit',array('id' => $v['id']))}" class="label label-success">修改</a>
-                                <a href="javascript:;" onclick="toConfirm('{:U('Category/del', array('id' => $v['id']))}', '确实要删除吗？')" class="label label-danger">删除</a>
+                                <!-- <a href="javascript:;" onclick="toConfirm('{:U('Category/del', array('id' => $v['id']))}', '确实要删除吗？')" class="label label-danger">删除</a> -->
                                 </td>
                             </tr>
                         </foreach>

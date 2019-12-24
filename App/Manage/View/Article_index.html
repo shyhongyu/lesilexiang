@@ -75,9 +75,9 @@
                                 <th>标题</th>
                                 <th>分类</th>
                                 <th>权重</th>
-                                <th>点击数</th>
+                                <!-- <th>点击数</th> -->
                                 <th>发布时间</th>
-                                <th>审核状态</th>
+                                <!-- <th>审核状态</th> -->
                                 <th class="text-right">操作</th>
                             </tr>
                         </thead>
@@ -89,9 +89,9 @@
                             <td class="aleft" style="color:{$v.color}">{$v.title}<if condition="$v.flag gt 0"><span style="color:#079B04;">[{$v.flag|flag2Str}]</span></if></td>
                             <td>{$v.cate_name}</td>
                             <td>{$v.point}</td>
-                            <td>{$v.click}</td>
+                            <!-- <td>{$v.click}</td> -->
                             <td>{$v.publish_time}</td>
-                            <td><notempty name="v['audit_status']"><strong class="text-success">已审核</strong><else /><strong class="text-muted"><i>未审核</i></strong></notempty></td>
+                            <!-- <td><notempty name="v['audit_status']"><strong class="text-success">已审核</strong><else /><strong class="text-muted"><i>未审核</i></strong></notempty></td> -->
                             <td class="text-right">
                             <if condition='ACTION_NAME eq "index"'>
                             <!-- <a href="{$v|view_url}" target="_blank" class="label label-info">查看</a> -->

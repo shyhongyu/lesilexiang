@@ -152,7 +152,7 @@ class FreeController extends CommonController {
 		}
 
 		if (M('guestbook')->delete($id)) {
-			$this->success('彻底删除成功', U('Guestbook/index'));
+			$this->success('彻底删除成功', U('Free/index'));
 		} else {
 			$this->error('彻底删除失败');
 		}
@@ -168,7 +168,7 @@ class FreeController extends CommonController {
 		$where = array('id' => array('in', $idArr));
 
 		if (M('guestbook')->where($where)->delete()) {
-			$this->success('彻底删除成功', U('Guestbook/index'));
+			$this->success('彻底删除成功', U('Free/index'));
 		} else {
 			$this->error('彻底删除失败');
 		}
