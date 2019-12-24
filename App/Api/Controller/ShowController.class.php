@@ -80,7 +80,7 @@ class ShowController extends Controller {
 			$username = I('username','', 'htmlspecialchars,rtrim');
 			$email = I('email','', 'htmlspecialchars,rtrim');
 			$weixin = I('weixin','', 'htmlspecialchars,rtrim');
-			$content = I('content','', 'htmlspecialchars,rtrim');
+			$content = I('content','', 'htmlspecialchars,rtrim');      
 			$post_time = date('Y-m-d H:i:s');
 			$data = array(
 				'tel'=>$tel,
@@ -138,7 +138,7 @@ class ShowController extends Controller {
 		 $total = M('article')->where(['cid'=>$id,'delete_status'=>0])->count();
 		 $page =I('page',0,'intval')?I('page',0,'intval'):1;//当前页
 		 //每页显示条数
-		 $page_size = 1;
+		 $page_size = 5;
 		//设置显示的页数
 		 $limit = ($page - 1) * $page_size . ',' . $page_size;
 		 $where = ['c.id'=>$id,'b.delete_status'=>0];
@@ -153,7 +153,6 @@ class ShowController extends Controller {
 			->limit($limit)
 			->select();	
 		 echo json_encode(['state'=>200,'msg'=>'请求成功','total'=>$total,'size'=>$page_size,'page_num'=>$page_num,'page'=>$page,'data'=>$list]);
- 
 	 }  
 	
 }

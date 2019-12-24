@@ -37,7 +37,7 @@ class PersonalController extends CommonController
         $vo = M('admin')->find(session(C('USER_AUTH_KEY')));
 
         $this->assign('vo', $vo);
-        $this->assign('type', '修改个人信息');
+        $this->assign('type', '个人信息');
         $this->display();
     }
 
