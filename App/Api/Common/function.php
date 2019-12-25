@@ -266,3 +266,13 @@ function update_search_all($data) {
 
 	return true;
 }
+
+
+function rData($state,$message,$data = []){
+	 $value = array(
+		 "state" => $state,
+		 "msg" => $message,
+		 "data" => $data,
+	 );
+	 echo json_encode($value);die;
+ }
