@@ -57,13 +57,13 @@ class ShowController extends Controller {
 			->where("id = $arc_id")
 			->find();
  		//上一篇
-		$where['id']=array('lt',$arc_id);//上一篇ID应该小于当前接收到的ID
-		$where['cid']=array('eq',$id);//分类ID
+		$where['id'] = array('lt',$arc_id);//上一篇ID应该小于当前接收到的ID
+		$where['cid'] = array('eq',$id);//分类ID
 		$front = M('article')->field('id,title,cid')->where($where)->order('id desc')->limit('1')->find();
 
 		//下一篇
-		$next['id']=array('gt',$arc_id);//下一篇ID应该大于当前接收到的ID
-		$next['cid']=array('eq',$id);//分类ID
+		$next['id'] = array('gt',$arc_id);//下一篇ID应该大于当前接收到的ID
+		$next['cid'] = array('eq',$id);//分类ID
 		$after = M('article')
 				->field('id,title,cid')
 				->where($next)
@@ -72,7 +72,7 @@ class ShowController extends Controller {
 		 echo json_encode(['state'=>200,'msg'=>'请求成功','data'=>$data,'front'=>$front,'after'=>$after]); 	
 	}
 	/**
-	 * 添加
+	 * 添加数据
 	 */
 	public function addData(){
 			$type = I('type', 0, 'intval');
@@ -105,6 +105,7 @@ class ShowController extends Controller {
 		echo json_encode(['state'=>200,'msg'=>'请求成功','data'=>$data]);
 
 	}
+
 	/**
 	 * 课程体系
 	 */
@@ -131,12 +132,11 @@ class ShowController extends Controller {
 	 * 新闻列表分页
 	 * 
 	 */
-
-	 public function NewList(){
+	public function NewList(){
 		 $id = I('id',0,'intval');
 		 //总记录数
 		 $total = M('article')->where(['cid'=>$id,'delete_status'=>0])->count();
-		 $page =I('page',0,'intval')?I('page',0,'intval'):1;//当前页
+		 $page = I('page',0,'intval')?I('page',0,'intval'):1;//当前页
 		 //每页显示条数
 		 $page_size = 5;
 		//设置显示的页数

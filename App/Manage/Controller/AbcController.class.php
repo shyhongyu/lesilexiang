@@ -167,7 +167,7 @@ class AbcController extends CommonController {
 
 		$this->assign('page', $page->show());
 		$this->assign('vlist', $list);
-		$this->assign('type', $cate['name'] . '-广告列表');
+		$this->assign('type', $cate['name'] . '-轮播图列表');
 		$this->assign('cate', $cate);
 
 		$this->display();
